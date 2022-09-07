@@ -1,0 +1,32 @@
+.wrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    max-width: 1920px;
+    height: 1462px;
+    background: #F9FBFC;
+}
+.sidebar
+{
+    max-width: 408px;
+    height: 1100px;
+    background: radial-gradient(159.06% 81.68% at 74.64% -9.86%, #322620 0%, #222222 100%);
+    box-shadow: 7px 0px 60px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+}
+.personal-page
+{
+    background: #E5E5E5;
+    display: column;
+    flex-direction: row;
+    align-items: center;
+}
+.about-user
+{
+    background: #FEFEFE;
+    max-width: 444px;
+    height: 317px;
+    border-radius: 10px;
+}
