@@ -1,17 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+/*Resize the wrap to see the search bar change!*/
+.wrap
+{
+
+    align-items: center;
+    width: 100%;
+    top: 52px;
+}
+
+.search {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 30%;
+  align-items: center;
+  border-right: none;
+  height: 50px;
+  color: #9DBFAF;
+  background: #F3F3F3;
+   border: 1px solid #D7D7D7;
+backdrop-filter: blur(5px);
+border-radius: 11px;
+}
+
+.searchTerm:focus{
+  color: #394c4e;
+}
+
 .container
 {
+    position: relative;
     display: grid;
     column-gap: 20px;
-    
-    position: relative;
-    max-width: 1920px;
+    grid: row;
+    align-items: center;
     height: 100vh;
+    width: auto;
     background: #F9FBFC;
 }
 .sidebar
 {   
     top: 0;
     max-width: 408px;
+    width: 100vw;
     height: 90vh;
     background: radial-gradient(159.06% 81.68% at 74.64% -9.86%, #322620 0%, #222222 100%);
     box-shadow: 7px 0px 60px rgba(0, 0, 0, 0.05);
@@ -19,16 +58,17 @@
 }
 .personal-page
 {
-    position: relative;
     background: #E5E5E5;
     display: grid;
     grid: row;
     align-items: center;
+    height: 900px;
+    width: 800px;
 }
 .about-user
 {
     align-items: center;
-    background: #FEFEFE;
+    background: #ff1313;
     max-width: 444px;
     height: 317px;
     border-radius: 10px;
