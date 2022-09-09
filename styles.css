@@ -1,30 +1,33 @@
-.wrapper
+.container
 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    display: grid;
+    column-gap: 20px;
+    
     position: relative;
     max-width: 1920px;
-    height: 1462px;
+    height: 100vh;
     background: #F9FBFC;
 }
 .sidebar
-{
+{   
+    top: 0;
     max-width: 408px;
-    height: 1100px;
+    height: 90vh;
     background: radial-gradient(159.06% 81.68% at 74.64% -9.86%, #322620 0%, #222222 100%);
     box-shadow: 7px 0px 60px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
 }
 .personal-page
 {
+    position: relative;
     background: #E5E5E5;
-    display: column;
-    flex-direction: row;
+    display: grid;
+    grid: row;
     align-items: center;
 }
 .about-user
 {
+    align-items: center;
     background: #FEFEFE;
     max-width: 444px;
     height: 317px;
