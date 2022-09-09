@@ -78,10 +78,10 @@ select {
 }
 .body
 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
 }
 p, a{
   text-decoration: none;
-  color: #eebfa2;
+  color: #000000;
 }
