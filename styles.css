@@ -200,6 +200,9 @@ border-radius: 10px;
 .double-auth
 {
     grid-area: double-auth;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .coin-buy
@@ -215,6 +218,17 @@ border-radius: 10px;
 .info
 {
     text-align: center;
-    
-
+    font-weight: 900;
+    font-size: 20px;
+    padding: 20px 0;
 }
+.info-text
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 15px;
+    gap: 20px;
+    padding: 0 20px;
+}
+
