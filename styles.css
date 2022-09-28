@@ -19,6 +19,7 @@ body
     color: #0000;
 }
 
+/*Search*/
 .search-wrap
 {
     display: flex;
@@ -56,6 +57,7 @@ border-radius: 11px;
   color: #d7d7d7;
 }
 
+/*sidebar*/
 .sidebar
 {   
     display: grid;
@@ -141,10 +143,10 @@ border-radius: 11px;
     text-transform: uppercase;
     color: #ffffff80;
 }
-
+/*Front*/
 .p-text
 {
-    width: 50%;
+    width: 35%;
     text-align: center;
     font-family: 'Montserrat';
     font-weight: 700;
@@ -152,7 +154,7 @@ border-radius: 11px;
     line-height: 37px;
     letter-spacing: 0.035em;
 }
-
+/*Cards in front*/
 .personal-page
 {
     display: flex;
@@ -165,7 +167,7 @@ border-radius: 11px;
 {
     display: grid;
     align-self: center;
-    width: 60vw;
+    width: 70vw;
     height: 80vh;
     justify-content: center;
     grid-template-columns: repeat(4, 1fr);
@@ -182,19 +184,69 @@ border-radius: 11px;
     padding-left: 5%; 
 }
 
-
 .pp
 {
 
 background: #fefefe;
 align-items: center;
 border-radius: 10px;
-
+border: 2px solid rgba(0, 0, 0, 0.1);
 }
+
+
+
 
 .about-user
 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     grid-area: about-user;
+}
+
+.info
+{
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+    padding: 20px 0;
+    margin: 10px 0;
+}
+
+.info-text
+{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 25vw;
+    font-size: 15px;
+    gap: 10px;
+}
+.info-text__item
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.btn
+{
+    height: 40px;
+    border-radius: 6px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+    color: #fff;
+}
+
+.exit-btn
+{
+    justify-content: center;
+    background: #FF4E4E;
+    width: 80%;
 }
 
 .double-auth
@@ -202,8 +254,18 @@ border-radius: 10px;
     grid-area: double-auth;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
+.double-auth__btn
+{
+    background: #242119;
+    width: 129px;
+}
+
+
+
+
+
 
 .coin-buy
 {
@@ -214,21 +276,3 @@ border-radius: 10px;
 {
     grid-area: skins;
 }
-
-.info
-{
-    text-align: center;
-    font-weight: 900;
-    font-size: 20px;
-    padding: 20px 0;
-}
-.info-text
-{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    font-size: 15px;
-    gap: 20px;
-    padding: 0 20px;
-}
-
