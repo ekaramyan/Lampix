@@ -229,6 +229,14 @@ border: 2px solid rgba(0, 0, 0, 0.1);
     justify-content: space-between;
     align-items: flex-start;
 }
+.priveledge
+{
+    color: #FF9800;
+}
+.coin-count
+{
+    font-weight: 700;
+}
 
 .btn
 {
@@ -240,6 +248,7 @@ border: 2px solid rgba(0, 0, 0, 0.1);
     line-height: 18px;
     letter-spacing: 0.03em;
     color: #fff;
+    border: #0000;
 }
 
 .exit-btn
@@ -270,6 +279,11 @@ border: 2px solid rgba(0, 0, 0, 0.1);
 .coin-buy
 {
     grid-area: coin-buy;
+}
+
+.info-coin
+{
+    
 }
 
 .skins
