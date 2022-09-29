@@ -14,6 +14,7 @@ body
     grid: row;
     align-items: center;
     height: 100vh;
+    width: 100vw;
     background: url(src/img/personal-cabinet/bg.jpg);
     font-family: Montserrat;
     color: #0000;
@@ -146,7 +147,7 @@ border-radius: 11px;
 /*Front*/
 .p-text
 {
-    width: 35%;
+    width: 42%;
     text-align: center;
     font-family: 'Montserrat';
     font-weight: 700;
@@ -167,8 +168,8 @@ border-radius: 11px;
 {
     display: grid;
     align-self: center;
-    width: 70vw;
-    height: 80vh;
+    width: 65vw;
+    height: 75vh;
     justify-content: center;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -179,18 +180,30 @@ border-radius: 11px;
                     "coin-buy coin-buy . .";
 
     grid-auto-rows: minmax(150px, auto);
-    gap: 20px;
+    gap: 10px;
     padding-right: 5%;
     padding-left: 5%; 
 }
 
+.pp-wrapper
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px 20px 0px 20px;
+    width: fit-content;
+    height: 100%;
+    gap: 5px;
+}
+
+
 .pp
 {
 
-background: #fefefe;
-align-items: center;
-border-radius: 10px;
-border: 2px solid rgba(0, 0, 0, 0.1);
+    background: #fefefe;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 
@@ -206,11 +219,11 @@ border: 2px solid rgba(0, 0, 0, 0.1);
 
 .info
 {
+    top: 0;
     text-align: center;
     font-weight: 900;
-    font-size: 20px;
-    padding: 20px 0;
-    margin: 10px 0;
+    font-size: 18px;
+    padding: 10px 0 0 0;
 }
 
 .info-text
@@ -222,6 +235,7 @@ border: 2px solid rgba(0, 0, 0, 0.1);
     width: 25vw;
     font-size: 15px;
     gap: 10px;
+    padding-bottom: 20px;
 }
 .info-text__item
 {
@@ -241,6 +255,7 @@ border: 2px solid rgba(0, 0, 0, 0.1);
 .btn
 {
     height: 40px;
+    align-items: center;
     border-radius: 6px;
     font-family: 'Montserrat';
     font-weight: 400;
@@ -256,6 +271,7 @@ border: 2px solid rgba(0, 0, 0, 0.1);
     justify-content: center;
     background: #FF4E4E;
     width: 80%;
+    margin: 0 auto;
 }
 
 .double-auth
@@ -269,6 +285,7 @@ border: 2px solid rgba(0, 0, 0, 0.1);
 {
     background: #242119;
     width: 129px;
+    
 }
 
 
@@ -283,7 +300,34 @@ border: 2px solid rgba(0, 0, 0, 0.1);
 
 .info-coin
 {
-    
+    color: #0000005e;
+}
+.coin-buy__count{
+    display: flex;
+    color: #000;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+    width: max-content;
+    height: 22px;
+}
+
+.subinfo
+{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #0707075e;
+}
+
+.coin-buy__count
+{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
 }
 
 .skins
