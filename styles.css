@@ -460,19 +460,28 @@ border-radius: 11px;
 {
     grid-area: skins;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 297px;
+    align-items: center;
 }
 
 .skin
 {
+    background: url(src/img/cards/skin.png) no-repeat;
+    height: 100%;
+    width: 100%;
+    margin: 50px 0 0 0;
+    flex-shrink: 1;
 }
 
 .skin-bg
 {
+    background: url(src/img/cards/skin-bg.png);
     height: 297px;
+    width: 100%;
     border-radius: 10px;
     overflow: hidden;
+    flex-shrink: 1;
 }
 
 
