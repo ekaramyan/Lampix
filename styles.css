@@ -14,7 +14,7 @@ body
     grid: row;
     align-items: center;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background: url(src/img/personal-cabinet/bg.jpg);
     font-family: Montserrat;
     color: #0000;
@@ -62,15 +62,16 @@ border-radius: 11px;
 .sidebar
 {   
     display: grid;
+    align-self: flex-start;
     align-items: center;
     text-align: center;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 56px 3fr;
-    margin-top: -80px;
+    /* margin-top: -80px; */
     top: 0;
     max-width: 408px;
     width: 40vw;
-    height: 90vh;
+    height: 96vh;
     background: radial-gradient(159.06% 81.68% at 74.64% -9.86%, #322620 0%, #222222 100%);
     box-shadow: 7px 0px 60px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
@@ -147,7 +148,10 @@ border-radius: 11px;
 /*Front*/
 .p-text
 {
-    width: 42%;
+    display: flex;
+    align-self: flex-start;
+    margin-left: 55px;
+    /* width: 42%; */
     text-align: center;
     font-family: 'Montserrat';
     font-weight: 700;
@@ -161,14 +165,14 @@ border-radius: 11px;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    height: 90vh;
+
 }
 
 .cards
 {
     display: grid;
     align-self: center;
-    width: 65vw;
+    width: 90%;
     height: 75vh;
     justify-content: center;
     grid-template-columns: repeat(4, 1fr);
@@ -180,9 +184,7 @@ border-radius: 11px;
                     "coin-buy coin-buy . .";
 
     grid-auto-rows: minmax(150px, auto);
-    gap: 10px;
-    padding-right: 5%;
-    padding-left: 5%; 
+    gap: 20px; 
 }
 
 .pp-wrapper
@@ -231,11 +233,12 @@ border-radius: 11px;
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-items: center;
     justify-content: space-around;
-    width: 25vw;
+    width: 100%;
     font-size: 15px;
     gap: 10px;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }
 .info-text__item
 {
@@ -280,6 +283,7 @@ border-radius: 11px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    height: 80%;
 }
 .double-auth__btn
 {
@@ -422,6 +426,7 @@ border-radius: 11px;
     backdrop-filter: blur(2.5px);
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 11px;
+    border: none;
 }
 .promo-p
 {
@@ -484,4 +489,10 @@ border-radius: 11px;
     flex-shrink: 1;
 }
 
+.footer
+{
+    height: 343px;
+    width: 100%;
+    background: #222222;
+}
 
