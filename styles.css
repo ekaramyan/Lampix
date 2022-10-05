@@ -477,29 +477,76 @@ border-radius: 11px;
 {
     grid-area: skins;
     display: flex;
-    justify-content: space-evenly;
-    height: 297px;
+    justify-content: space-between;
+    /* height: max-content; */
     align-items: center;
+    border: 0;
+   
 }
+
 
 .skin
 {
-    background: url(src/img/cards/skin.png) no-repeat;
-    height: 100%;
-    width: 100%;
-    margin: 50px 0 0 0;
-    flex-shrink: 1;
+    display: flex;
+    
+    /* background: url(src/img/cards/skin.png) no-repeat; */
+    max-height: fit-content;
+    height: auto;
+    width: auto;
+    grid-auto-rows: minmax(100px, auto);
+    padding: 0 10px;
+    justify-self: center;
 }
 
 .skin-bg
 {
+    display: flex;
+    flex-direction: column;
     background: url(src/img/cards/skin-bg.png);
-    height: 297px;
-    width: 100%;
+    height: 100%;
+    width: 50%;
     border-radius: 10px;
     overflow: hidden;
     flex-shrink: 1;
+    text-align: center;
+    justify-content: center;
 }
+
+.skin-wrap
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.skin-header
+{
+    /* position: absolute; */
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #FFFFFF;
+    z-index: 2;
+}
+.skin-paragraph
+{
+    color: #fff;
+}
+
+.skins__btn
+{
+    color: #000;
+    background: #FFD699;
+    font-weight: 600;
+    align-self: center;
+    padding: 0 30px;
+    width: fit-content;
+}
+
 
 .footer
 {
