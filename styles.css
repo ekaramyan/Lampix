@@ -503,19 +503,20 @@ border-radius: 11px;
 
 .footer
 {
-
-    column-gap: 20px;
-    height: 343px;
+    gap: 40px;
+    row-gap: 20px;
+    max-height: 1000px;
     width: 100%;
     background: #222222;
     overflow: hidden;
+    padding: 20px 0 10px;
 }
 .upper
 {
     display: grid;
     height: 100%;
-    max-height: 200px;
-    padding-top: 40px;
+    max-height: 230px;
+    /* padding-top: 40px; */
     grid-template-rows: repeat(2, 1fr);
     column-gap: 40px;
     row-gap: 10px;
@@ -524,6 +525,7 @@ border-radius: 11px;
                          ".  logo inn oferta .";
 
 }
+
 .logo-wrap
 {
     display: flex;
@@ -583,18 +585,73 @@ border-radius: 11px;
     font-size: 16px;
     line-height: 20px;
     text-decoration: underline;
-    align-self: end;
+    align-self: center;
 }
-.string
-{
-    justify-content: flex-start;
-    height: 3px;
-    background: rgba(255, 255, 255, 0.07);
-}
+
 .down
 {
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    height: 100%;
+    width: 100%;
+    max-height: 50px;
+}
+
+.down::before
+{
+    position: absolute;
+    content: '';
+    align-self: stretch;
+    height: 3px;
+    width: 100%;
+    background: #ffffff12;
+    z-index: 2;
+}
+
+.down-content
+{
+    display: flex;
+    margin-top: 20px;
+    align-content: flex-end;
+    gap: 20px;
+    justify-content: flex-end;
+    text-align: center;
+    padding-right: 100px;
     flex-direction: row;
     height: 100%;
-    max-height: 90px;
+    width: 100%;
+    max-height: 50px;
+    
+}
+
+.footer-buttons
+{
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    max-height: 50px;
+    height: 100%;
+}
+.footer-buttons__item  p
+{
+    
+    color: #ffffff8c;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.055em;
+}
+.footer-buttons__item-active p
+{
+    color: #ffffff;
+}
+
+.footer-logo a
+{
+    align-self: flex-end;
+    color: #F09000;
+    font-size: 22pt;
 }

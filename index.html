@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="../src/img/icon/icon.svg" type="image/x-icon">
     <link rel='stylesheet' type='text/css' media='screen' href='null.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <script src="https://kit.fontawesome.com/48c939ed2f.js" crossorigin="anonymous"></script>
     <script src='script.js'></script>
     
     <title>Lampix Server</title>
@@ -39,13 +40,23 @@
 
 <section class="central">
         <div class="personal-page">
+          <header class="header">
+
             <div class="search-wrap">  
-                <div class="search">
-                    <input type="text" class="searchTerm" placeholder="Search">
-                      <i class="fa fa-search"></i>
-                   </button>
-                 </div>
+              <div class="search">
+                  <input type="text" class="searchTerm" placeholder="Search">
+                    <i class="fa fa-search"></i>
+                 </button>
+               </div>
+          </div>
+
+            <div class="online">
+              <p class="online-text"></p>
+              
             </div>
+
+          </header>
+
             <p class="p-text">Личный Кабинет</p>
             <div class="cards">
               <div class="pp about-user">
@@ -118,19 +129,23 @@
       
 
       <div class="down">
-        <div class="string"></div>
-        <ul class="footer-logos">
-          <li class="logo footer-logo">        </li>
-          <li class="logo footer-logo">        </li>
-          <li class="logo footer-logo">        </li>
-        </ul>
-        <ul class="footer-buttons">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+        
+        <div class="down-content"> 
+
+          <ul class="footer-buttons">
+          <li class="logo footer-logo telegram-logo"><a href=""><i class="fa-brands fa-telegram"></i></a></li>
+          <li class="logo footer-logo vk-logo">   <a href=""><i class="fa-brands fa-vk"></i></a></li>
+          <li class="logo footer-logo discord-logo"> <a href=""><i class="fa-brands fa-discord"></i></a></li>
+          
+          <li class="footer-buttons__item"><a href=""><p>Главная</p></a></li>
+          <li class="footer-buttons__item"><a href=""><p>Форум</p></a></li>
+          <li class="footer-buttons__item footer-buttons__item-active"><a href=""><p>Магазин</p></a></li>
+          <li class="footer-buttons__item"><a href=""><p>Правила</p></a></li>
+          <li class="footer-buttons__item"><a href=""><p>FAQ</p></a></li>
+          </ul>
+
+        </div>
+
       </div>
 
 
