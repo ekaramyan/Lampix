@@ -780,6 +780,9 @@ header ul{
 
 .footer
 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 40px;
     row-gap: 20px;
     max-height: 1000px;
@@ -792,14 +795,19 @@ header ul{
 {
     display: grid;
     height: 100%;
-    max-height: 230px;
-    /* padding-top: 40px; */
+    min-height: 230px;
+    max-width: 1200px;
+    width: 100%;
+    margin-left: 220px;
+    align-items: center;
+    justify-content: center;
     grid-template-rows: repeat(2, 1fr);
     column-gap: 40px;
     row-gap: 10px;
-    grid-template-columns: 370px 250px 360px 340px 0.5fr;
-    grid-template-areas: ".  logo copyright i ." 
-                         ".  logo inn oferta .";
+    grid-template-columns: 2fr 3fr 3fr;
+    grid-template-areas: "logo copyright i" 
+                         "logo inn oferta";
+    grid-auto-rows: minmax(230px, auto);
 
 }
 
@@ -869,10 +877,11 @@ header ul{
 {
     display: flex;
     flex-direction: row;
+
     align-items: stretch;
     height: 100%;
     width: 100%;
-    max-height: 50px;
+    min-height: 50px;
 }
 
 .down::before
@@ -898,16 +907,17 @@ header ul{
     flex-direction: row;
     height: 100%;
     width: 100%;
-    max-height: 50px;
+    min-height: 50px;
     
 }
 
 .footer-buttons
 {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     justify-content: flex-end;
-    max-height: 50px;
+    min-height: 50px;
     height: 100%;
 }
 .footer-buttons__item  p
@@ -944,10 +954,13 @@ header ul{
     color: #f0900086;
 }
 
+
+
 @media screen and (max-width: 900px) 
 {
     .cards
 {
+
     grid-template-areas:
                     "about-user about-user double-auth double-auth"
                     "about-user about-user double-auth     double-auth"
@@ -971,7 +984,8 @@ header ul{
 .container
 {
     display: flex;
-    
+    justify-content: center;
+
 }
 .sidebar
 {
@@ -979,10 +993,19 @@ header ul{
 }
 
 
+.footer
+{
+
+}
+.upper
+{
+    margin: 0;
+}
+
 }
 
 
-@media screen and (max-width: 720px) 
+@media screen and (max-width: 730px) 
 {
     
 }
