@@ -60,6 +60,7 @@ header ul{
 .searchTerm {
   width: 100%;
   justify-content: center;
+  text-align: center;
   border-right: none;
   height: 50px;
   color: #000;
@@ -74,7 +75,7 @@ header ul{
 {
   color: #000000;
   font-weight: 600;
-}
+
 
 .header__logos
 {
