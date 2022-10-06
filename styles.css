@@ -15,7 +15,8 @@ body
     align-items: center;
     height: 100vh;
     width: 100%;
-    background: url(src/img/personal-cabinet/bg.jpg);
+    background: url(src/img/personal-cabinet/bg.jpg) no-repeat fixed center;
+    background-size: cover;
     font-family: Montserrat;
     color: #0000;
 }
@@ -443,7 +444,7 @@ header ul{
     letter-spacing: 0.03em;
     color: #ffffff;
     border: 1px solid #00000025;
-    transition: 0.5s;
+    transition: .5s;
     cursor: pointer;
 }
 .btn:hover
@@ -663,10 +664,11 @@ header ul{
 .skin
 {
     display: flex;
+
     /* background: url(src/img/cards/skin.png) no-repeat; */
     max-height: fit-content;
     height: auto;
-    width: auto;
+    width: 50%;
     grid-auto-rows: minmax(100px, auto);
     padding: 0 10px;
     justify-self: center;
@@ -676,7 +678,7 @@ header ul{
 {
     display: flex;
     flex-direction: column;
-    background: url(src/img/cards/skin-bg.png);
+    background: url(src/img/cards/skin-bg.png) no-repeat center/cover;
     height: 100%;
     width: 50%;
     border-radius: 10px;
@@ -711,22 +713,50 @@ header ul{
     color: #fff;
 }
 
+.skins__btn-wrapper
+{
+    width: 100%;
+    position: relative;
+    margin: 15px 0;
+    text-align: center;
+    
+}
+.skin__btn-wrapper
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+}
+.field{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+  }
 .skins__btn
 {
+    max-height: 70px;
+    height: 100%;
+    width: auto;
+    align-self: center;
+    border-radius: 6px;
+    cursor: pointer;
     color: #000;
     text-transform: uppercase;
     background: #FFD699;
     font-weight: 600;
-    align-self: center;
-    padding: 0 30px;
+    padding: 3% 10%;
     width: fit-content;
+    font-size: 1.125rem;
+    transition: .5s;
 }
 .skins__btn:hover
 {
-    background: #eeaa44;
-    color: #FFFFFF;
+    background: #ffd699b3;
+    color: #000000bc;
 }
-
 
 .footer
 {
