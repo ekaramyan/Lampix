@@ -1,0 +1,217 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 90px;
+  width: 100%;
+  top: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.headerul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100px;
+}
+
+/*Search*/
+.search-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 30%;
+  height: 50px;
+  /* top: 52px; */
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+}
+
+.search {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  /* position: relative; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border-right: none;
+  height: 50px;
+  color: #000;
+  background: #F3F3F3;
+  border: 1px solid rgba(215, 215, 215, 0.2862745098);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 11px;
+}
+
+.searchTerm:focus {
+  color: #000000;
+  font-weight: 600;
+}
+
+.header__logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 50px;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+}
+.header__logos li {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.header__logos i {
+  cursor: pointer;
+  font-size: 22pt;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.header__logos i:hover {
+  color: #F09000;
+}
+
+.telegram-logo i {
+  color: #242119;
+}
+
+.vk-logo i {
+  color: #2787F5;
+}
+
+.discord-logo i {
+  color: #5865F2;
+}
+
+.online {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* align-items: center; */
+}
+.online-text {
+  text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-top: -5px;
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+.online-switch {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  text-align: center;
+}
+.online-count {
+  font-size: 13pt;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #000000;
+  font-weight: 600;
+  line-height: 27px;
+}
+.online-countspan {
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 11px;
+}
+.switch-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #D7D7D7;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.switch-slider:before {
+  position: absolute;
+  content: "";
+  height: 11px;
+  width: 65%;
+  margin-left: -50%;
+  background-color: #f5f5f5;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  display: none;
+}
+
+/* The slider */
+input:checked + .switch-slider {
+  background-color: #F09000;
+}
+
+input:focus + .switch-slider {
+  -webkit-box-shadow: 0 0 1px #F09000;
+          box-shadow: 0 0 1px #F09000;
+}
+
+input:checked + .switch-slider:before {
+  -webkit-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.switch-slider.round {
+  border-radius: 30px;
+}
+.switch-slider.round:before {
+  border-radius: 30px;
+}

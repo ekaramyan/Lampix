@@ -1,0 +1,115 @@
+.sidebar
+{   
+    display: grid;
+    align-self: flex-start;
+    align-items: center;
+    text-align: center;
+    /* grid-template-columns: 1fr; */
+    grid-template-rows: 1fr 56px 3fr;
+    top: 0;
+    /* padding: 0 30%; */
+    max-width: 700px;
+    width: 100%;
+    height: 96vh;
+    background: radial-gradient(159.06% 81.68% at 74.64% -9.86%, #322620 0%, #222222 100%);
+    box-shadow: 7px 0px 60px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+
+
+    &__header
+{
+    
+    color: #fff;
+    width: auto;
+    height: auto;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 38px;
+
+}
+}
+
+
+.account
+{
+    display: grid;
+    width: 1fr;
+    height: 56px;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    grid-template-columns: 100px 100px; 
+    grid-template-rows: 28px 28px; 
+    grid-template-areas: 
+        "img name"
+        "img coins"; 
+&__img
+{
+    grid: center;
+    width: 56px;
+    height: 56px;
+    grid-area: img;
+}
+&__name
+{
+    color: #fff;
+    grid-area: name;
+}
+&__coins
+{
+    grid-area: coins;
+    color: #ffffff4f;
+}
+}
+
+.menu
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 74px);
+    place-items: center;
+
+&__item
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff80;
+    column-gap: 10px;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+&__item:hover
+{
+    color: #F09000;
+    background: #f0900033;
+}
+&__item-text
+{ 
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+    color: #ffffff80;
+    transition: .5s;
+}
+&__item-text:hover
+{
+    color: #fff;
+}
+
+/* &__item::after
+{
+    content: " ";
+    color: #F09000;
+    width: 7px;
+    height: 100%;
+} */
+
+}

@@ -1,0 +1,81 @@
+@media screen and (max-width: 900px) 
+{
+
+    .container
+{
+    display: flex;
+    justify-content: center;
+
+}
+    .cards
+{
+
+    grid-template-areas:
+                    "about-user about-user double-auth double-auth"
+                    "about-user about-user double-auth     double-auth"
+                    "coin-buy   coin-buy    skins          skins"
+                    "coin-buy   coin-buy    skins              skins";
+
+}
+
+
+.sidebar
+{
+    display: none;
+}
+
+.info
+{
+    font-size: 13px;
+&-text
+{
+    font-size: 12px;
+}
+}
+
+.btn
+{
+    font-size: 12px;
+}
+.info-coin
+{
+    font-size: 20px;
+}
+.double-auth
+{
+    max-height: 100px;
+}
+.skin
+{
+    display: none;
+}
+.skin-bg
+{
+    width: 100%;
+}
+
+
+
+.footer-buttons
+{
+ display: flex;
+ justify-content: center;
+}
+.upper
+{
+    margin: 0;
+}
+
+
+}
+
+
+@media screen and (max-width: 730px) 
+{
+    
+}
+
+@media screen and (max-width: 400px) 
+{
+    
+}

@@ -1,0 +1,58 @@
+@media screen and (max-width: 900px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .cards {
+        grid-template-areas: "about-user about-user double-auth double-auth" "about-user about-user double-auth     double-auth" "coin-buy   coin-buy    skins          skins" "coin-buy   coin-buy    skins              skins";
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .info {
+    font-size: 13px;
+  }
+  .info-text {
+    font-size: 12px;
+  }
+
+  .btn {
+    font-size: 12px;
+  }
+
+  .info-coin {
+    font-size: 20px;
+  }
+
+  .double-auth {
+    max-height: 100px;
+  }
+
+  .skin {
+    display: none;
+  }
+
+  .skin-bg {
+    width: 100%;
+  }
+
+  .footer-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .upper {
+    margin: 0;
+  }
+}
