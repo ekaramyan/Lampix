@@ -8,6 +8,17 @@
             justify-content: center;
   }
 
+  .online {
+    grid-area: online;
+    display: none;
+  }
+  .online-count {
+    color: #fff;
+  }
+  .online span {
+    color: rgba(255, 255, 255, 0.5019607843);
+  }
+
   .cards {
         grid-template-areas: "about-user about-user double-auth double-auth" "about-user about-user double-auth     double-auth" "coin-buy   coin-buy    skins          skins" "coin-buy   coin-buy    skins              skins";
   }
@@ -57,6 +68,39 @@
   }
 
   .burger-menu {
-    display: block;
+    position: fixed;
+    z-index: 2;
+    opacity: 1;
+    width: 300px;
+    height: 100vh;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .burger-menu__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 15px;
+  }
+  .burger-menu.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .menu.active {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    -webkit-box-shadow: 7px 0px 60px rgba(0, 0, 0, 0.05);
+            box-shadow: 7px 0px 60px rgba(0, 0, 0, 0.05);
+  }
+  .menu-close {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 120%;
+    color: rgba(255, 111, 111, 0.5019607843);
   }
 }

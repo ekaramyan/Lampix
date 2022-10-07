@@ -9,46 +9,71 @@
     <link rel="shortcut icon" href="../src/img/icon/icon.svg" type="image/x-icon">
     <link rel='stylesheet' type='text/css' media='screen' href='null.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/personal-page.css'>
-    <script src="https://kit.fontawesome.com/48c939ed2f.js" crossorigin="anonymous"></script>
-    <script src='script.js'></script>
     
+    <meta name="viewport" content="width=device-width">
     <title>Lampix Server</title>
   </head>
   <body>
     
     <div class="container">
 
+
+<section>
+
+
+  <div class="burger-menu">
+     <div class="burger-menu__content">
+
+            <div class="online menu-online">
+              <div class="burger-menu__button menu-close"> <i><i class="fa-solid fa-xmark"></i></i></div>
+              <div class="online-switch">
+                <p class="online-text menu-online-text">Online</p>
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="switch-slider round"></span>
+                </label>
+              </div>
+              <p class=" online-count">200<span>/1000</span></p>  
+            </div>
+
+      <ul class="menu">
         
-<section class="sidebar">
-  <p class="sidebar__header">lampix.net</p>
+        <li class="menu__item"><i class="fa-sharp fa-solid fa-house"></i><p class="menu__item-text">главная</p></li>
+        <li class="menu__item"><i class="fa-solid fa-window-maximize"></i><p class="menu__item-text">форум</p></li>
+        <li class="menu__item"><i class="fa-sharp fa-solid fa-credit-card"></i><p class="menu__item-text">магазин</p></li>
+        <li class="menu__item"><i class="fa-solid fa-message"></i><p class="menu__item-text">правила</p></li>
+        <li class="menu__item"><i class="fa-regular fa-circle-question"></i><p class="menu__item-text">FAQ</p></li>
+      </ul>
+    </div>
+  </div>
 
-  <ul class="account">
-      <li class="account__img"><img class="" src="http://dummyimage.com/56/a6a6ff" alt=""></li>
-      <li class="account__name"><p class="account__name">Evil_Lord</p></li>
-      <li class="account__coins"><p class="account__coins">23 coins</p></li>
-  </ul>
 
-  <ul class="menu">
-    <li class="menu__item"><i class="fa-sharp fa-solid fa-house"></i><p class="menu__item-text">главная</p></li>
-    <li class="menu__item"><i class="fa-solid fa-window-maximize"></i><p class="menu__item-text">форум</p></li>
-    <li class="menu__item"><i class="fa-sharp fa-solid fa-credit-card"></i><p class="menu__item-text">магазин</p></li>
-    <li class="menu__item"><i class="fa-solid fa-message"></i><p class="menu__item-text">правила</p></li>
-    <li class="menu__item"><i class="fa-regular fa-circle-question"></i><p class="menu__item-text">FAQ</p></li>
-  </ul>
+    <section class="sidebar">
+      <p class="sidebar__header">lampix.net</p>
+    
+      <ul class="account">
+          <li class="account__img"><img class="" src="http://dummyimage.com/56/a6a6ff" alt=""></li>
+          <li class="account__name"><p class="account__name">Evil_Lord</p></li>
+          <li class="account__coins"><p class="account__coins">23 coins</p></li>
+      </ul>
+    
+      <ul class="menu">
+        <li class="menu__item"><i class="fa-sharp fa-solid fa-house"></i><p class="menu__item-text">главная</p></li>
+        <li class="menu__item"><i class="fa-solid fa-window-maximize"></i><p class="menu__item-text">форум</p></li>
+        <li class="menu__item"><i class="fa-sharp fa-solid fa-credit-card"></i><p class="menu__item-text">магазин</p></li>
+        <li class="menu__item"><i class="fa-solid fa-message"></i><p class="menu__item-text">правила</p></li>
+        <li class="menu__item"><i class="fa-regular fa-circle-question"></i><p class="menu__item-text">FAQ</p></li>
+      </ul>
+    </section>
 </section>
 
 
 <section class="central">
   <header class="header">
 
-      <form>
-        <input type="button" class="burger-button">
-        <button class="burger-menu" id="burger__btn">
-          <img src="/src/img/personal-cabinet/burger.svg" alt="burger-menu" style="vertical-align:middle"> 
-         </button>
-
-      </form>
-
+      <div class="burger-menu__button">
+        <img src="./src/img/personal-cabinet/burger.svg" alt="">
+      </div>
 
          <div class="search-wrap">  
            <div class="search">
@@ -187,4 +212,8 @@
 
 
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="https://kit.fontawesome.com/48c939ed2f.js" crossorigin="anonymous"></script>
+    <script src='/script.js'></script>
   </body>
