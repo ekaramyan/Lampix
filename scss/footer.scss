@@ -1,0 +1,183 @@
+.footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    row-gap: 20px;
+    max-height: 1000px;
+    width: 100%;
+    background: #222222;
+    overflow: hidden;
+    padding: 20px 0 10px;
+
+
+
+&-buttons
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: flex-end;
+    min-height: 50px;
+    height: 100%;
+    &__item  p
+    {
+        
+        color: #ffffff8c;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.055em;
+        transition: .2s;
+        &:hover
+        {
+            color: #fff;
+        }
+    }
+}
+
+
+}
+.upper
+{
+    display: grid;
+    height: 100%;
+    min-height: 230px;
+    max-width: 1200px;
+    width: 100%;
+    margin-left: 220px;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 10px;
+    grid-template-columns: 2fr 3fr 3fr;
+    grid-template-areas: "logo copyright i" 
+                         "logo inn oferta";
+    grid-auto-rows: minmax(230px, auto);
+
+}
+
+.logo-wrap
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 38px;
+    letter-spacing: 0.035em;
+    grid-area: logo;
+
+}
+
+.site-logo img
+{   
+    max-width: 70px;
+    width: 100%;
+    align-self: center;
+}
+.logo-text
+{
+    color: #fff;
+}
+
+.copyright
+{
+    grid-area: copyright;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    height: 30px;
+   
+}
+.i
+{
+    grid-area: i;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #ffffff8c;
+    align-self: start;
+}
+.inn
+{
+    grid-area: inn;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #ffffff8c;
+}
+.oferta
+{
+    grid-area: oferta;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: underline;
+    align-self: center;
+}
+
+.down
+{
+    display: flex;
+    flex-direction: row;
+
+    align-items: stretch;
+    height: 100%;
+    width: 100%;
+    min-height: 50px;
+
+    &::before
+    {
+        position: absolute;
+        content: '';
+        align-self: stretch;
+        height: 3px;
+        width: 100%;
+        background: #ffffff12;
+        z-index: 2;
+    }
+    &-content
+{
+    display: flex;
+    margin-top: 20px;
+    align-content: flex-end;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    min-height: 50px;
+    
+}
+}
+
+
+
+
+
+.footer
+
+/* .footer-buttons__item-active p
+{
+    color: #ffffff;
+} */
+
+.footer-logo i
+{
+    align-self: flex-end;
+    color: #F09000;
+    &:hover
+    {
+        color: #f0900086;
+    }
+}
