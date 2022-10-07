@@ -1,8 +1,8 @@
 
-$(function() {
-$("#id результата").hide(); // скрываем элементы
-$("burger__btn").on('click', function() { // указываем кнопку при клике на которую покажутся элементы
-$("burger-menu").show(); // показываем элементы
- appNormalise();
- }) 
- });
+let button = document.querySelector('.burger-button'); //кнопка
+let menu = document.querySelector('.burger-menu');
+
+button.onclick = () => { //накидываем на кнопку обработчик событий по клику.
+//    menu.classList.toggle('.sidebar{display:grid}');
+   document.getElementById(".sidebar").style.display = "grid";
+}
