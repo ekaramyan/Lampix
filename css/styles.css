@@ -217,8 +217,14 @@ input:checked + .switch-slider:before {
   border-radius: 30px;
 }
 
+.burger-button {
+  display: none;
+}
+
 .burger-menu {
   display: none;
+  background: none;
+  border: none;
 }
 
 .sidebar {
@@ -610,7 +616,6 @@ body {
   color: rgba(0, 0, 0, 0);
 }
 
-/*Front*/
 @media screen and (max-width: 900px) {
   .container {
     display: -webkit-box;
@@ -667,5 +672,9 @@ body {
 
   .upper {
     margin: 0;
+  }
+
+  .burger-menu {
+    display: block;
   }
 }

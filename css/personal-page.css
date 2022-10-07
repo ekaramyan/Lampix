@@ -268,10 +268,33 @@
   border-radius: 5px;
   background: #d3d3d3;
   outline: none;
-  opacity: 0.7;
-  -webkit-transition: 0.2s;
+  opacity: 0.8;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
+}
+.slider::-moz-range-thumb {
+  width: 25px;
+  /* Set a specific slider handle width */
+  height: 25px;
+  /* Slider handle height */
+  background: #FFD699;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  width: 25px;
+  /* Set a specific slider handle width */
+  height: 25px;
+  /* Slider handle height */
+  background: #000;
+  border-radius: 50%;
+  border: 4px solid #FFD699;
+  cursor: pointer;
+  /* Cursor on hover */
 }
 
 .promo {
