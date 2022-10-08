@@ -10,7 +10,17 @@
     background: #222222;
     overflow: hidden;
     padding: 20px 0 10px;
-
+    
+&-logo i
+{
+    align-self: flex-end;
+    color: #F09000;
+    font-size: 30px;
+    &:hover
+    {
+        color: #f0900086;
+    }
+}
 
 
 &-buttons
@@ -58,6 +68,11 @@
     grid-template-areas: "logo copyright i" 
                          "logo inn oferta";
     grid-auto-rows: minmax(230px, auto);
+
+    &-buttons
+    {
+        display: none;
+    }
 
 }
 
@@ -164,20 +179,3 @@
 
 
 
-
-.footer
-
-/* .footer-buttons__item-active p
-{
-    color: #ffffff;
-} */
-
-.footer-logo i
-{
-    align-self: flex-end;
-    color: #F09000;
-    &:hover
-    {
-        color: #f0900086;
-    }
-}

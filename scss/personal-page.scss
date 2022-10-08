@@ -1,4 +1,4 @@
-@import "styles.css";
+
 .p-text
 {
     display: flex;
@@ -446,3 +446,6 @@
         color: #000000bc;
     }
 }
+
+
+@import "responsive.scss";
