@@ -6,6 +6,7 @@
     min-height: 20px;
     top: 0;
     
+    
     &__content
     {
         display: grid;
@@ -51,6 +52,7 @@
 
 .menu
 {
+    
     display: none;
     grid-area: menu;
     justify-content:space-around;

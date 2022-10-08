@@ -86,13 +86,14 @@
 .burger-menu
 {
  
-    
+    display: flex;
     position: fixed;
     z-index: 2;
     opacity: 1;
    width: 300px;
    height: 100vh;
-   transition: all .5s;
+   transform: translate(-100%, 0);
+   transition: transform linear .5s;
 
    &__content
    {
@@ -106,7 +107,8 @@
 
     &.active
 {
-    display: flex;
+    
+    transform: translate(0, 0);
 }
 }
 
@@ -114,6 +116,7 @@
 {
     &.active
     {
+        
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         box-shadow: 7px 0px 60px rgba(0, 0, 0, 0.05);
