@@ -139,6 +139,10 @@
 
 @media screen and (max-width: 660px) 
 {
+    .container
+    {
+        padding-right: 20px;
+    }
     .cards{
         display: flex;
         flex-direction: column;
@@ -149,7 +153,12 @@
 
         .double-auth
         {
-            order:3
+            order:3;
+            padding: 10px 0;
+            &__btn
+            {
+                padding:4px 10px;
+            }
         }
 
        .personal-page
@@ -163,6 +172,12 @@
        {
         display: none;
        }
+
+        .info
+        {
+            padding:0 0 0 0;
+        }
+
        .p-text
        {
         justify-content: center;
