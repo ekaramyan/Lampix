@@ -8,6 +8,52 @@
             justify-content: center;
   }
 
+  .header__logos {
+    display: none;
+  }
+  .header__account {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 70px 70px;
+    grid-template-columns: 70px 70px;
+    -ms-grid-rows: 28px 28px;
+    grid-template-rows: 28px 28px;
+    color: #000;
+  }
+  .header__account > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .header__account > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .header__account > *:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .header__account > *:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+  .header__account p {
+    color: #000;
+  }
+
+  .account__name {
+    font-weight: 700;
+  }
+  .account__coins {
+    font-weight: 500;
+    letter-spacing: -0.005em;
+  }
+
+  .search {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
   .online {
     grid-area: online;
     display: none;
@@ -81,7 +127,7 @@
     z-index: 2;
     opacity: 0.8;
     width: 300px;
-    height: 100vh;
+    height: 100%;
     -webkit-transform: translate(-120%, 0);
             transform: translate(-120%, 0);
     -webkit-transition: all linear 0.3s;
@@ -120,16 +166,36 @@
     padding-right: 20px;
   }
 
-  .header__logos {
-    display: none;
-  }
-
   .searchTerm {
     width: 25%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     border: none;
   }
   .searchTerm.active {
     width: 100%;
+  }
+
+  .pp-wrapper {
+    padding: 0;
+  }
+
+  .coin-buy__count {
+    font-size: 15pt;
+  }
+  .coin-buy__info {
+    padding: 0;
+  }
+
+  .buy-btn {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .promo {
+    height: 30px;
   }
 
   .cards {
@@ -264,9 +330,11 @@
     padding: 0 16px;
   }
   .text-1::before {
-    content: " ";
+    content: "";
     padding: 0;
     display: block;
+    position: absolute;
+    z-index: 2;
     max-width: 600px;
     width: 100%;
     height: 3px;
@@ -284,5 +352,26 @@
     gap: 15px;
     padding: 0 16px 5% 16px;
     background: #1A1A1A;
+  }
+}
+@media (max-height: 720px) {
+  .cards {
+    height: 100%;
+    gap: 5px;
+    -ms-grid-columns: 1fr 5px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 1fr 5px 1fr;
+    grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "about-user  double-auth" "coin-buy     skins";
+    padding-bottom: 20px;
+  }
+
+  .burger-menu {
+    -webkit-transform: translate(-150%, 0);
+            transform: translate(-150%, 0);
+  }
+  .burger-menu.active {
+    -webkit-transform: translate(-25%, 0);
+            transform: translate(-25%, 0);
   }
 }

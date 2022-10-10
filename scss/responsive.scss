@@ -8,6 +8,41 @@
     justify-content: center;
 
 }
+.header
+{
+    &__logos
+    {
+        display: none;
+    }
+    &__account
+    {
+        display: grid;
+        grid-template-columns: 70px 70px; 
+        grid-template-rows: 28px 28px; 
+        color: #000;
+        p{
+            color: #000;
+        }
+    }
+}
+.account
+{
+    &__name
+    {
+        font-weight: 700;
+    }
+    &__coins
+    {
+        font-weight: 500;
+        letter-spacing: -0.005em;
+    }
+}
+.search
+{
+    justify-content: center;
+}
+
+
 .online
 {
     grid-area: online;
@@ -97,7 +132,7 @@
     z-index: 2;
     opacity: 0.8;
    width: 300px;
-   height: 100vh;
+   height: 100%;
    transform: translate(-120%, 0);
    transition: all linear .3s;
 
@@ -149,21 +184,38 @@
     {
         padding-right: 20px;
     }
-    .header
-    {
-        &__logos
-        {
-            display: none;
-        }
-    }
+
     .searchTerm
     {
         width: 25%;
+        justify-content: center;
         border: none;
         &.active
         {
             width: 100%;
         }
+    }
+
+    .pp-wrapper
+    {
+        padding: 0;
+    }
+    .coin-buy{
+        &__count
+        {
+            font-size: 15pt;
+        }
+        &__info
+        {
+            padding: 0;
+        }
+    }
+    .buy-btn
+    {
+        width: fit-content;
+    }
+    .promo{
+        height: 30px;
     }
 
     .cards{
@@ -276,9 +328,11 @@
         padding: 0 16px;
         &::before
         {
-            content: " ";
+            content: '';
             padding: 0;
             display: block;
+            position: absolute;
+            z-index: 2;
             max-width: 600px;
             width: 100%;
             height: 3px;
@@ -299,4 +353,27 @@
 @media screen and (max-width: 400px) 
 {
 
+}
+
+@media  (max-height: 720px)
+ {
+   .cards{
+    height: 100%;
+    gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:  "about-user  double-auth" "coin-buy     skins";
+    padding-bottom: 20px;
+   }
+   .burger-menu
+   {
+
+      transform: translate(-150%, 0);
+   
+       &.active
+   {
+       transform: translate(-25%, 0);
+   }
+    }
+    
 }

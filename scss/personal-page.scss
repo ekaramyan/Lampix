@@ -26,7 +26,8 @@
     display: grid;
     align-self: center;
     width: 90%;
-    height: 73vh;
+    height: 100%;
+    max-width: 1000px;
     justify-content: center;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -178,6 +179,7 @@
 .coin-buy
 {
     grid-area: coin-buy;
+    max-height: 200px;
     &__count
     {
         display: flex;

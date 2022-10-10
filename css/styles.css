@@ -24,6 +24,9 @@
       justify-content: space-around;
   height: 100px;
 }
+.header__account {
+  display: none;
+}
 
 .logo-phones {
   display: none;
@@ -318,7 +321,7 @@ input:checked + .switch-slider:before {
   /* padding: 0 30%; */
   max-width: 700px;
   width: 100%;
-  height: 96vh;
+  height: 96%;
   background: radial-gradient(159.06% 81.68% at 74.64% -9.86%, #322620 0%, #222222 100%);
   -webkit-box-shadow: 7px 0px 60px rgba(0, 0, 0, 0.05);
           box-shadow: 7px 0px 60px rgba(0, 0, 0, 0.05);
@@ -473,7 +476,6 @@ input:checked + .switch-slider:before {
   width: 100%;
   background: #222222;
   overflow: hidden;
-  padding: 20px 0 10px;
 }
 .footer-logo i {
   -ms-flex-item-align: end;
@@ -536,38 +538,42 @@ input:checked + .switch-slider:before {
 }
 
 .upper {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
   height: 100%;
   min-height: 230px;
   max-width: 1200px;
   width: 100%;
-  margin-left: 220px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-grid-rows: 1fr 10px 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-column-gap: 40px;
      -moz-column-gap: 40px;
           column-gap: 40px;
   row-gap: 10px;
-  -ms-grid-columns: 2fr 40px 3fr 40px 3fr;
-  grid-template-columns: 2fr 3fr 3fr;
-      grid-template-areas: "logo copyright i" "logo inn oferta";
-  grid-auto-rows: minmax(230px, auto);
 }
 .upper-buttons {
   display: none;
 }
 
+.text-1 .text-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  padding: 0 10px 0 10px;
+}
+
 .logo-wrap {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -585,7 +591,6 @@ input:checked + .switch-slider:before {
   font-size: 31px;
   line-height: 38px;
   letter-spacing: 0.035em;
-  grid-area: logo;
 }
 
 .site-logo img {
@@ -601,32 +606,31 @@ input:checked + .switch-slider:before {
 }
 
 .copyright {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: copyright;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
-  height: 30px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .i {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-  grid-area: i;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
   color: rgba(255, 255, 255, 0.5490196078);
-  -ms-grid-row-align: start;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
       align-self: start;
 }
 
 .inn {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  grid-area: inn;
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
@@ -634,15 +638,13 @@ input:checked + .switch-slider:before {
 }
 
 .oferta {
-  -ms-grid-row: 3;
-  -ms-grid-column: 5;
-  grid-area: oferta;
   color: #fff;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-decoration: underline;
-  -ms-grid-row-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
 }
 
@@ -727,7 +729,8 @@ input:checked + .switch-slider:before {
   -ms-grid-row-align: center;
       align-self: center;
   width: 90%;
-  height: 73vh;
+  height: 100%;
+  max-width: 1000px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -897,6 +900,7 @@ input:checked + .switch-slider:before {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: coin-buy;
+  max-height: 200px;
 }
 .coin-buy__count {
   display: -webkit-box;
@@ -1213,6 +1217,52 @@ input:checked + .switch-slider:before {
             justify-content: center;
   }
 
+  .header__logos {
+    display: none;
+  }
+  .header__account {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 70px 70px;
+    grid-template-columns: 70px 70px;
+    -ms-grid-rows: 28px 28px;
+    grid-template-rows: 28px 28px;
+    color: #000;
+  }
+  .header__account > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .header__account > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .header__account > *:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .header__account > *:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+  .header__account p {
+    color: #000;
+  }
+
+  .account__name {
+    font-weight: 700;
+  }
+  .account__coins {
+    font-weight: 500;
+    letter-spacing: -0.005em;
+  }
+
+  .search {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
   .online {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -1288,7 +1338,7 @@ input:checked + .switch-slider:before {
     z-index: 2;
     opacity: 0.8;
     width: 300px;
-    height: 100vh;
+    height: 100%;
     -webkit-transform: translate(-120%, 0);
             transform: translate(-120%, 0);
     -webkit-transition: all linear 0.3s;
@@ -1355,16 +1405,36 @@ input:checked + .switch-slider:before {
     padding-right: 20px;
   }
 
-  .header__logos {
-    display: none;
-  }
-
   .searchTerm {
     width: 25%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     border: none;
   }
   .searchTerm.active {
     width: 100%;
+  }
+
+  .pp-wrapper {
+    padding: 0;
+  }
+
+  .coin-buy__count {
+    font-size: 15pt;
+  }
+  .coin-buy__info {
+    padding: 0;
+  }
+
+  .buy-btn {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .promo {
+    height: 30px;
   }
 
   .cards {
@@ -1499,9 +1569,11 @@ input:checked + .switch-slider:before {
     padding: 0 16px;
   }
   .text-1::before {
-    content: " ";
+    content: "";
     padding: 0;
     display: block;
+    position: absolute;
+    z-index: 2;
     max-width: 600px;
     width: 100%;
     height: 3px;
@@ -1519,6 +1591,51 @@ input:checked + .switch-slider:before {
     gap: 15px;
     padding: 0 16px 5% 16px;
     background: #1A1A1A;
+  }
+}
+@media (max-height: 720px) {
+  .cards {
+    height: 100%;
+    gap: 5px;
+    -ms-grid-columns: 1fr 5px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 1fr 5px 1fr;
+    grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "about-user  double-auth" "coin-buy     skins";
+    padding-bottom: 20px;
+  }
+
+  .burger-menu {
+    -webkit-transform: translate(-150%, 0);
+            transform: translate(-150%, 0);
+  }
+  .burger-menu.active {
+    -webkit-transform: translate(-25%, 0);
+            transform: translate(-25%, 0);
+  }
+  .about-user {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .double-auth {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+  }
+  .coin-buy {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .skins {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
   }
 }
 body {
@@ -1538,7 +1655,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  max-height: 1920px;
+  height: 100%;
   width: 100%;
   background: url(../src/img/personal-cabinet/bg.jpg) no-repeat fixed center;
   background-size: cover;
@@ -1551,6 +1669,52 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .header__logos {
+    display: none;
+  }
+  .header__account {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 70px 70px;
+    grid-template-columns: 70px 70px;
+    -ms-grid-rows: 28px 28px;
+    grid-template-rows: 28px 28px;
+    color: #000;
+  }
+  .header__account > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .header__account > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .header__account > *:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .header__account > *:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+  .header__account p {
+    color: #000;
+  }
+
+  .account__name {
+    font-weight: 700;
+  }
+  .account__coins {
+    font-weight: 500;
+    letter-spacing: -0.005em;
+  }
+
+  .search {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1631,7 +1795,7 @@ body {
     z-index: 2;
     opacity: 0.8;
     width: 300px;
-    height: 100vh;
+    height: 100%;
     -webkit-transform: translate(-120%, 0);
             transform: translate(-120%, 0);
     -webkit-transition: all linear 0.3s;
@@ -1698,16 +1862,36 @@ body {
     padding-right: 20px;
   }
 
-  .header__logos {
-    display: none;
-  }
-
   .searchTerm {
     width: 25%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     border: none;
   }
   .searchTerm.active {
     width: 100%;
+  }
+
+  .pp-wrapper {
+    padding: 0;
+  }
+
+  .coin-buy__count {
+    font-size: 15pt;
+  }
+  .coin-buy__info {
+    padding: 0;
+  }
+
+  .buy-btn {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .promo {
+    height: 30px;
   }
 
   .cards {
@@ -1842,9 +2026,11 @@ body {
     padding: 0 16px;
   }
   .text-1::before {
-    content: " ";
+    content: "";
     padding: 0;
     display: block;
+    position: absolute;
+    z-index: 2;
     max-width: 600px;
     width: 100%;
     height: 3px;
@@ -1862,5 +2048,50 @@ body {
     gap: 15px;
     padding: 0 16px 5% 16px;
     background: #1A1A1A;
+  }
+}
+@media (max-height: 720px) {
+  .cards {
+    height: 100%;
+    gap: 5px;
+    -ms-grid-columns: 1fr 5px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 1fr 5px 1fr;
+    grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "about-user  double-auth" "coin-buy     skins";
+    padding-bottom: 20px;
+  }
+
+  .burger-menu {
+    -webkit-transform: translate(-150%, 0);
+            transform: translate(-150%, 0);
+  }
+  .burger-menu.active {
+    -webkit-transform: translate(-25%, 0);
+            transform: translate(-25%, 0);
+  }
+  .about-user {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .double-auth {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+  }
+  .coin-buy {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .skins {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
   }
 }
