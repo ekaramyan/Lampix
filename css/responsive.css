@@ -402,6 +402,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 70px;
   }
 
   .account__name {
@@ -417,6 +418,15 @@
     height: 24px;
     margin: 0;
     border-radius: 50%;
+  }
+}
+@media (max-width: 350px) {
+  .header__account {
+    width: 60px;
+  }
+
+  .logo-phones {
+    font-size: 10pt;
   }
 }
 @media (max-height: 720px) {
