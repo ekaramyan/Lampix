@@ -19,6 +19,14 @@
         display: grid;
         grid-template-columns: 70px 70px; 
         grid-template-rows: 28px 28px; 
+        grid-template-areas: 
+        "img name"
+        "img coins"; 
+        width: 1fr;
+        height: 56px;
+        align-items: center;
+        align-self: center;
+        justify-content: center;
         color: #000;
         p{
             color: #000;

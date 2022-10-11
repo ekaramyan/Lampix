@@ -470,12 +470,15 @@ input:checked + .switch-slider:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   gap: 40px;
   row-gap: 20px;
   max-height: 1000px;
   width: 100%;
   background: #222222;
   overflow: hidden;
+  bottom: 0;
 }
 .footer-logo i {
   -ms-flex-item-align: end;
@@ -496,7 +499,7 @@ input:checked + .switch-slider:before {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 30px;
+  gap: 10px 20px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -652,10 +655,11 @@ input:checked + .switch-slider:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
@@ -664,7 +668,6 @@ input:checked + .switch-slider:before {
   min-height: 50px;
 }
 .down::before {
-  position: absolute;
   content: "";
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
@@ -678,7 +681,6 @@ input:checked + .switch-slider:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 20px;
   -ms-flex-line-pack: end;
       align-content: flex-end;
   gap: 20px;
@@ -693,6 +695,7 @@ input:checked + .switch-slider:before {
   height: 100%;
   width: 100%;
   min-height: 50px;
+  background: #222222;
 }
 
 .p-text {
@@ -1227,23 +1230,18 @@ input:checked + .switch-slider:before {
     grid-template-columns: 70px 70px;
     -ms-grid-rows: 28px 28px;
     grid-template-rows: 28px 28px;
+        grid-template-areas: "img name" "img coins";
+    width: 1fr;
+    height: 56px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-row-align: center;
+        align-self: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     color: #000;
-  }
-  .header__account > *:nth-child(1) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-  .header__account > *:nth-child(2) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-  }
-  .header__account > *:nth-child(3) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-  }
-  .header__account > *:nth-child(4) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
   }
   .header__account p {
     color: #000;
@@ -1370,6 +1368,19 @@ input:checked + .switch-slider:before {
             justify-content: center;
     width: 120%;
     color: rgba(255, 111, 111, 0.5019607843);
+  }
+  .header__account > .account__img {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+  }
+  .header__account > .account__name {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .header__account > .account__coins {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
   }
 
   .about-user {
@@ -1684,23 +1695,18 @@ body {
     grid-template-columns: 70px 70px;
     -ms-grid-rows: 28px 28px;
     grid-template-rows: 28px 28px;
+        grid-template-areas: "img name" "img coins";
+    width: 1fr;
+    height: 56px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-row-align: center;
+        align-self: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     color: #000;
-  }
-  .header__account > *:nth-child(1) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-  .header__account > *:nth-child(2) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-  }
-  .header__account > *:nth-child(3) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-  }
-  .header__account > *:nth-child(4) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
   }
   .header__account p {
     color: #000;
@@ -1827,6 +1833,19 @@ body {
             justify-content: center;
     width: 120%;
     color: rgba(255, 111, 111, 0.5019607843);
+  }
+  .header__account > .account__img {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+  }
+  .header__account > .account__name {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .header__account > .account__coins {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
   }
 
   .about-user {

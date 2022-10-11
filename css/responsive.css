@@ -18,23 +18,18 @@
     grid-template-columns: 70px 70px;
     -ms-grid-rows: 28px 28px;
     grid-template-rows: 28px 28px;
+        grid-template-areas: "img name" "img coins";
+    width: 1fr;
+    height: 56px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-row-align: center;
+        align-self: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     color: #000;
-  }
-  .header__account > *:nth-child(1) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-  .header__account > *:nth-child(2) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-  }
-  .header__account > *:nth-child(3) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-  }
-  .header__account > *:nth-child(4) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
   }
   .header__account p {
     color: #000;

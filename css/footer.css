@@ -9,12 +9,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   gap: 40px;
   row-gap: 20px;
   max-height: 1000px;
   width: 100%;
   background: #222222;
   overflow: hidden;
+  bottom: 0;
 }
 .footer-logo i {
   -ms-flex-item-align: end;
@@ -35,7 +38,7 @@
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 30px;
+  gap: 10px 20px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -191,10 +194,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
@@ -203,7 +207,6 @@
   min-height: 50px;
 }
 .down::before {
-  position: absolute;
   content: "";
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
@@ -217,7 +220,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 20px;
   -ms-flex-line-pack: end;
       align-content: flex-end;
   gap: 20px;
@@ -232,4 +234,5 @@
   height: 100%;
   width: 100%;
   min-height: 50px;
+  background: #222222;
 }

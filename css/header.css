@@ -23,6 +23,13 @@
       justify-content: space-around;
   height: 100px;
 }
+.header__account {
+  display: none;
+}
+
+.logo-phones {
+  display: none;
+}
 
 /*Search*/
 .search-wrap {
