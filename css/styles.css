@@ -247,7 +247,7 @@ input:checked + .switch-slider:before {
   /* padding: 0 30%; */
   max-width: 700px;
   width: 100%;
-  height: 96vh;
+  height: 80%;
   background: radial-gradient(159.06% 81.68% at 74.64% -9.86%, #322620 0%, #222222 100%);
   -webkit-box-shadow: 7px 0px 60px rgba(0, 0, 0, 0.05);
           box-shadow: 7px 0px 60px rgba(0, 0, 0, 0.05);
@@ -320,8 +320,8 @@ input:checked + .switch-slider:before {
   top: 0;
   /* padding: 0 30%; */
   max-width: 700px;
+  height: 96vh;
   width: 100%;
-  height: 96%;
   background: radial-gradient(159.06% 81.68% at 74.64% -9.86%, #322620 0%, #222222 100%);
   -webkit-box-shadow: 7px 0px 60px rgba(0, 0, 0, 0.05);
           box-shadow: 7px 0px 60px rgba(0, 0, 0, 0.05);
@@ -1218,6 +1218,13 @@ input:checked + .switch-slider:before {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 50px 0;
   }
 
   .header__logos {
@@ -1350,8 +1357,8 @@ input:checked + .switch-slider:before {
   }
   .burger-menu.active {
     opacity: 1;
-    -webkit-transform: translate(-10%, 0);
-            transform: translate(-10%, 0);
+    -webkit-transform: translate(-20%, 0);
+            transform: translate(-20%, 0);
   }
 
   .menu.active {
@@ -1604,6 +1611,16 @@ input:checked + .switch-slider:before {
     background: #1A1A1A;
   }
 }
+@media screen and (max-width: 400px) {
+  .burger-menu {
+    -webkit-transform: translate(-150%, 0);
+            transform: translate(-150%, 0);
+  }
+  .burger-menu.active {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
 @media (max-height: 720px) {
   .cards {
     height: 100%;
@@ -1621,8 +1638,8 @@ input:checked + .switch-slider:before {
             transform: translate(-150%, 0);
   }
   .burger-menu.active {
-    -webkit-transform: translate(-25%, 0);
-            transform: translate(-25%, 0);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
   .about-user {
     -ms-grid-row: 1;
@@ -1666,13 +1683,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-height: 1920px;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background: url(../src/img/personal-cabinet/bg.jpg) no-repeat fixed center;
   background-size: cover;
   font-family: Montserrat;
   color: rgba(0, 0, 0, 0);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 @media screen and (max-width: 900px) {
@@ -1683,6 +1702,13 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 50px 0;
   }
 
   .header__logos {
@@ -1815,8 +1841,8 @@ body {
   }
   .burger-menu.active {
     opacity: 1;
-    -webkit-transform: translate(-10%, 0);
-            transform: translate(-10%, 0);
+    -webkit-transform: translate(-20%, 0);
+            transform: translate(-20%, 0);
   }
 
   .menu.active {
@@ -2069,6 +2095,16 @@ body {
     background: #1A1A1A;
   }
 }
+@media screen and (max-width: 400px) {
+  .burger-menu {
+    -webkit-transform: translate(-150%, 0);
+            transform: translate(-150%, 0);
+  }
+  .burger-menu.active {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
 @media (max-height: 720px) {
   .cards {
     height: 100%;
@@ -2086,8 +2122,8 @@ body {
             transform: translate(-150%, 0);
   }
   .burger-menu.active {
-    -webkit-transform: translate(-25%, 0);
-            transform: translate(-25%, 0);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
   .about-user {
     -ms-grid-row: 1;

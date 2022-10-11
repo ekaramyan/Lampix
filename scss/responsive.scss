@@ -6,7 +6,9 @@
 {
     display: flex;
     justify-content: center;
-
+    align-items: flex-start;
+    height: max-content;
+    padding: 50px 0;
 }
 .header
 {
@@ -144,9 +146,6 @@
    transform: translate(-120%, 0);
    transition: all linear .3s;
 
-   &__content
-   {
-   }
 
     &__button
     {
@@ -154,10 +153,11 @@
         width: 15px;
     }
 
+
     &.active
 {
     opacity: 1;
-    transform: translate(-10%, 0);
+    transform: translate(-20%, 0);
 }
 }
 
@@ -360,11 +360,20 @@
 
 @media screen and (max-width: 400px) 
 {
-
+    .burger-menu
+    {
+ 
+       transform: translate(-150%, 0);
+    
+        &.active
+    {
+        transform: translate(0, 0);
+    }
+}
 }
 
 @media  (max-height: 720px)
- {
+{
    .cards{
     height: 100%;
     gap: 5px;
@@ -373,15 +382,17 @@
     grid-template-areas:  "about-user  double-auth" "coin-buy     skins";
     padding-bottom: 20px;
    }
+
    .burger-menu
    {
 
-      transform: translate(-150%, 0);
-   
-       &.active
-   {
-       transform: translate(-25%, 0);
-   }
-    }
+    transform: translate(-150%, 0);
+
+
     
+    &.active
+    {
+    transform: translate(0, 0);
+    }
+    }
 }
