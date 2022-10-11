@@ -1359,6 +1359,10 @@ input:checked + .switch-slider:before {
             transform: translate(-120%, 0);
     -webkit-transition: all linear 0.3s;
     transition: all linear 0.3s;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .burger-menu__button {
     display: -webkit-box;
@@ -1896,6 +1900,10 @@ body {
             transform: translate(-120%, 0);
     -webkit-transition: all linear 0.3s;
     transition: all linear 0.3s;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .burger-menu__button {
     display: -webkit-box;
