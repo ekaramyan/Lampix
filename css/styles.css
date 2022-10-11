@@ -341,20 +341,16 @@ input:checked + .switch-slider:before {
 .account {
   display: -ms-grid;
   display: grid;
-  width: 1fr;
-  height: 56px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  max-width: 220px;
+  max-height: 56px;
   -ms-grid-row-align: center;
       align-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-grid-columns: 100px 100px;
-  grid-template-columns: 100px 100px;
-  -ms-grid-rows: 28px 28px;
-  grid-template-rows: 28px 28px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
+  -ms-grid-rows: 50% 50%;
+  grid-template-rows: 50% 50%;
       grid-template-areas: "img name" "img coins";
 }
 .account__img {
@@ -362,8 +358,8 @@ input:checked + .switch-slider:before {
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid: center;
-  width: 56px;
-  height: 56px;
+  width: 100%;
+  height: 100%;
   grid-area: img;
 }
 .account__name {
@@ -1343,7 +1339,7 @@ input:checked + .switch-slider:before {
     display: flex;
     position: fixed;
     z-index: 2;
-    opacity: 0.8;
+    opacity: 0.1;
     width: 300px;
     height: 100%;
     -webkit-transform: translate(-120%, 0);
@@ -1422,7 +1418,7 @@ input:checked + .switch-slider:before {
 }
 @media screen and (max-width: 660px) {
   .container {
-    padding-right: 20px;
+    width: 100vw;
   }
 
   .searchTerm {
@@ -1490,6 +1486,7 @@ input:checked + .switch-slider:before {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    max-width: 90vw;
     width: 100%;
     text-align: center;
   }
@@ -1588,17 +1585,6 @@ input:checked + .switch-slider:before {
     background: #222222;
     padding: 0 16px;
   }
-  .text-1::before {
-    content: "";
-    padding: 0;
-    display: block;
-    position: absolute;
-    z-index: 2;
-    max-width: 600px;
-    width: 100%;
-    height: 3px;
-    color: rgba(255, 255, 255, 0.07);
-  }
 
   .text-2 {
     display: -webkit-box;
@@ -1615,8 +1601,8 @@ input:checked + .switch-slider:before {
 }
 @media screen and (max-width: 400px) {
   .burger-menu {
-    -webkit-transform: translate(-150%, 0);
-            transform: translate(-150%, 0);
+    -webkit-transform: translate(-120%, 0);
+            transform: translate(-120%, 0);
   }
   .burger-menu.active {
     -webkit-transform: translate(0, 0);
@@ -1641,8 +1627,8 @@ input:checked + .switch-slider:before {
   }
 
   .burger-menu {
-    -webkit-transform: translate(-150%, 0);
-            transform: translate(-150%, 0);
+    -webkit-transform: translate(-120%, 0);
+            transform: translate(-120%, 0);
   }
   .burger-menu.active {
     -webkit-transform: translate(0, 0);
@@ -1838,7 +1824,7 @@ body {
     display: flex;
     position: fixed;
     z-index: 2;
-    opacity: 0.8;
+    opacity: 0.1;
     width: 300px;
     height: 100%;
     -webkit-transform: translate(-120%, 0);
@@ -1917,7 +1903,7 @@ body {
 }
 @media screen and (max-width: 660px) {
   .container {
-    padding-right: 20px;
+    width: 100vw;
   }
 
   .searchTerm {
@@ -1985,6 +1971,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    max-width: 90vw;
     width: 100%;
     text-align: center;
   }
@@ -2083,17 +2070,6 @@ body {
     background: #222222;
     padding: 0 16px;
   }
-  .text-1::before {
-    content: "";
-    padding: 0;
-    display: block;
-    position: absolute;
-    z-index: 2;
-    max-width: 600px;
-    width: 100%;
-    height: 3px;
-    color: rgba(255, 255, 255, 0.07);
-  }
 
   .text-2 {
     display: -webkit-box;
@@ -2110,8 +2086,8 @@ body {
 }
 @media screen and (max-width: 400px) {
   .burger-menu {
-    -webkit-transform: translate(-150%, 0);
-            transform: translate(-150%, 0);
+    -webkit-transform: translate(-120%, 0);
+            transform: translate(-120%, 0);
   }
   .burger-menu.active {
     -webkit-transform: translate(0, 0);
@@ -2136,8 +2112,8 @@ body {
   }
 
   .burger-menu {
-    -webkit-transform: translate(-150%, 0);
-            transform: translate(-150%, 0);
+    -webkit-transform: translate(-120%, 0);
+            transform: translate(-120%, 0);
   }
   .burger-menu.active {
     -webkit-transform: translate(0, 0);
