@@ -21,8 +21,8 @@
   .header__account {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 70px 70px;
-    grid-template-columns: 70px 70px;
+    -ms-grid-columns: 60px 65px;
+    grid-template-columns: 60px 65px;
     -ms-grid-rows: 28px 28px;
     grid-template-rows: 28px 28px;
         grid-template-areas: "img name" "img coins";
@@ -68,7 +68,9 @@
   }
 
   .logo-phones {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     color: #000;
     font-weight: 700;
   }
@@ -365,6 +367,11 @@
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
+
+  .logo-phones {
+    font-size: 14pt;
+    text-align: center;
+  }
 }
 @media (max-height: 720px) {
   .cards {
@@ -385,5 +392,9 @@
   .burger-menu.active {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
+  }
+
+  .search-wrap {
+    max-width: 90px;
   }
 }
