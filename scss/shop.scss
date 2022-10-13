@@ -15,6 +15,7 @@
     &-cards
     {
         display: grid;
+        flex-wrap: wrap;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 20px;
@@ -22,10 +23,81 @@
 }
 .card
 {
-    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
     // max-width: 130px;
-    max-height: 250px;
+    max-height: 300px;
     width: 100%;
     height: 100%;
     border-radius: 10px;
+    &-text
+    {
+        width: 100%;
+        text-align: center;
+        background: #fff;
+        z-index: 2;
+        &-name
+        {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #00000080;
+        }
+        &-skin-name
+        {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.035em;
+
+        }
+    }
 }
+.image
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    max-height: 200px;
+    height: 100%;
+    width: 100%;
+    align-self: flex-start;
+    justify-self: center;
+    background: radial-gradient(75.26% 75.26% at 50.2% 75.26%, #CD9E57 0%, #FFD699 60.19%);
+    border-radius: 10px 10px 0 0;
+    img
+    {
+        max-width: 200px;
+        max-height: 250px;
+        height: 140%;
+        width: 140%;
+    }
+}
+.price
+{
+    height: 100%;
+    width: 100%;
+    background: #242119;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    padding: 5%;
+    transition: .3s;
+    p{
+        color: #fff;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    &:hover
+    {
+        background: #b1ab9c;
+        p{
+            color:rgb(46, 39, 39);
+        }
+    }
+}
+
+@import "responsive.scss";
