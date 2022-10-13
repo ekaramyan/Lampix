@@ -376,7 +376,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
   .burger-menu {
     -webkit-transform: translate(-120%, 0);
             transform: translate(-120%, 0);
@@ -424,6 +424,18 @@
     margin: 0;
     border-radius: 50%;
   }
+
+  .shop-cards {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .image img {
+    max-width: 200px;
+    max-height: 250px;
+    height: 100%;
+    width: 100%;
+  }
 }
 @media (max-width: 350px) {
   .header__account {
@@ -432,6 +444,12 @@
 
   .logo-phones {
     font-size: 10pt;
+  }
+
+  .shop-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 @media (max-height: 720px) {

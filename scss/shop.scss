@@ -53,6 +53,29 @@
             line-height: 24px;
             letter-spacing: 0.035em;
 
+        }       
+        &-price
+        {
+        height: 100%;
+        width: 100%;
+        background: #242119;
+        border-radius: 0 0 10px 10px;
+        text-align: center;
+        padding: 5%;
+        transition: .3s;
+        p{
+            color: #fff;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+        }
+        &:hover
+        {
+            background: #b1ab9c;
+            p{
+                color:rgb(46, 39, 39);
+            }
+        }
         }
     }
 }
@@ -76,28 +99,6 @@
         width: 140%;
     }
 }
-.price
-{
-    height: 100%;
-    width: 100%;
-    background: #242119;
-    border-radius: 0 0 10px 10px;
-    text-align: center;
-    padding: 5%;
-    transition: .3s;
-    p{
-        color: #fff;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 17px;
-    }
-    &:hover
-    {
-        background: #b1ab9c;
-        p{
-            color:rgb(46, 39, 39);
-        }
-    }
-}
+
 
 @import "responsive.scss";

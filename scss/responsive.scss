@@ -384,7 +384,7 @@
        }
 }
 
-@media screen and (max-width: 400px) 
+@media screen and (max-width: 430px) 
 {
     .burger-menu
     {
@@ -433,6 +433,16 @@
         margin: 0;
         border-radius: 50%;
     }
+    .shop-cards
+    {
+     grid-template-columns: repeat(2, 1fr);
+    }
+    .image img {
+        max-width: 200px;
+        max-height: 250px;
+        height: 100%;
+        width: 100%;
+    }
 }
 
 @media (max-width: 350px)
@@ -445,6 +455,11 @@
     {
         font-size: 10pt;
     }
+    .shop-cards
+    {
+    display: flex;
+    }
+
 }
 @media  (max-height: 720px)
 {
@@ -470,4 +485,5 @@
         {
             max-width: 90px;
         }
+
 }
