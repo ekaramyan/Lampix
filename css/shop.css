@@ -25,12 +25,15 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  height: 30px;
 }
-.shop-menu li:after {
-  content: " ";
-  width: 100%;
-  height: 4px;
-  color: linear-gradient(90deg, #F09000 4.03%, #FFCC80 100%);
+.shop-menu p:hover {
+  -webkit-transform: translate(-3px, -6px);
+          transform: translate(-3px, -6px);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(240, 144, 0, 0)), color-stop(#F09000), to(#FFCC80)) no-repeat center bottom;
+  background: linear-gradient(180deg, rgba(240, 144, 0, 0) 80%, #F09000, #FFCC80) no-repeat center bottom;
 }
 .shop-cards {
   display: -ms-grid;
@@ -135,7 +138,6 @@
   background: #b1ab9c;
 }
 .card-text-price:hover p {
-  text-decoration: overline;
   color: rgb(46, 39, 39);
 }
 
