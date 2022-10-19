@@ -1,7 +1,7 @@
 .main-cards {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: 3fr 3fr;
+  grid-template-rows: 8fr 6fr;
   grid-template-areas: "discount discount discount" "update vipe priveledge";
   gap: 20px;
 }
@@ -31,4 +31,8 @@
 
 .priveledge {
   grid-area: priveledge;
+}
+
+.shop-btn {
+  background: #F09000;
 }/*# sourceMappingURL=main.css.map */
