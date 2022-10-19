@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="../src/img/icon/icon.svg" type="image/x-icon">
     <link rel='stylesheet' type='text/css' media='screen' href='null.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='scss/styles.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='scss/main.css'>
     
     <meta name="viewport" content="width=device-width">
     <title>Lampix Server</title>
@@ -99,73 +100,20 @@
               <li class="logo header-logo discord-logo"> <a href=""><i class="fa-brands fa-discord"></i></a></li>
             </ul>
 </header>
-        <div class="personal-page">
-          
+<section class="central">
           <div class="top">
-            <p class="p-text">Личный Кабинет</p>
+            <p class="p-text">Новости</p>
           </div>
-            <div class="cards">
-              <div class="pp about-user">
-
-                <div class="pp-wrapper">
-                <p class="info">Информация о пользователе<p> 
-                <ul class="info-text">
-                    <li class="info-text__item"> <p>Ваша Привелегия</p> <p class="priveledge">Titan</p> </li>
-                    <li class="info-text__item"> <p>Ваш Баланс</p> <p><span class="coin-count">1000</span> coins</p></li>
-                    <li class="info-text__item"> <p>Имя Пользователя</p> <p>Evil_Lord</p></li>
-                </ul>
-                <button class="btn exit-btn">Выйти</button>
-                </div>
-
-              </div>
-              <div class="pp double-auth">
-                <p class="info">2-х этапная аутентификация<p> 
-                  <button class="btn double-auth__btn">Включить</button>
-              </div>
-              <div class="pp coin-buy">
-                <div class="pp-wrapper">
-                <p class="coin-buy__info">Покупка коинов<p> 
-                  <p class="subinfo">Получите</p>
-                  <div class="coin-buy__count">1400 coins</div>
-                  <div class="slidecontainer">
-                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                   </div>
-                   <input class="promo" type="text" name class="promo-p" placeholder="(Промокод, если есть)"></input>
-
-                  <div class="bottom-container">
-                    <button class="btn buy-btn">Купить</button>
-                    <div class="price"><p>Стоимость <span class="price-count">1000₽</span></p></div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="pp skins">
-                
-
-                  <div class="skin">
-                    <img src="src/img/cards/skin.png" alt="">
-                  </div>
-                  <div class="skin-bg">
-                    <div class="skin-wrap">
-                      <p class="skin-header">Скин</p>
-                      <p class="skin-paragraph">Вы можете загрузить любой свой скин</p>
-                      <div class="skins__btn-wrapper">
-                        <form enctype="multipart/form-data" method="post">
-                          <input name="skins__btn" type="file" id="skin__file" class="field" accept="image/.png" multiple>
-                           <label class="skin__btn-wrapper" for="skin__file">
-                            <div class="skins__btn">Загрузить</div>
-                            </label>
-                        </form>
-                      </div>  
-                    </div>
-
-
-                    <!-- <img src="src/img/cards/skin-bg.png" alt="http://dummyimage.com/220/a6a6ff" > -->
-                  </div>
-              </div>
+          <div class="main-cards">
+            <div class="main-cards__item discount">
+              <p class="discount-date">Успевай до 20.05.2022</p>
+              <p class="discount-size">Скидки на все товары до 70%</p>
+              <button class="btn shop-btn">Магазин</button>
             </div>
-
-        </div>
+            <div class="main-cards__item update"></div>
+            <div class="main-cards__item"></div>
+            <div class="main-cards__item"></div>
+          </div>
 
       </section>
 </div>
