@@ -45,6 +45,7 @@
 
 .update {
   grid-area: update;
+  display: flex;
   gap: 0px;
 }
 .update-wrap {
@@ -56,6 +57,7 @@
 .update-btn {
   background: #242119;
   border-radius: 0 0 10px 10px;
+  justify-self: end;
 }
 .update-date {
   font-weight: 700;
@@ -100,6 +102,46 @@
 
 .priveledge {
   grid-area: priveledge;
+  background: radial-gradient(50% 65.42% at 50% 65.42%, #CD9E57 0%, #FFD699 59.88%);
+}
+.priveledge-top {
+  align-items: center;
+  justify-content: center;
+  height: 25%;
+}
+.priveledge-top-img {
+  max-height: 160px;
+  align-self: center;
+  margin: 0;
+}
+.priveledge-top-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.priveledge-info {
+  background: #fefefe;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-content: center;
+  padding: 0 10px;
+  border-radius: 0 0 10px 10px;
+}
+.priveledge-info p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0.035em;
+  color: #000000;
+}
+.priveledge-info a {
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .shop-btn {
