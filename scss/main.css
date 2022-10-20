@@ -1,3 +1,7 @@
+.top {
+  padding: 0;
+}
+
 .main-cards {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
@@ -5,7 +9,13 @@
   grid-template-areas: "discount discount discount" "update vipe priveledge";
   gap: 20px;
 }
+.main-cards p {
+  color: #fefefe;
+}
 .main-cards__item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   background: #fefefe;
   border-radius: 10px;
   height: 100%;
@@ -14,11 +24,23 @@
 
 .discount {
   grid-area: discount;
-  background: url(/src/img/main/discount-bg.png) no-repeat center;
-  background: radial-gradient(47.05% 47.05% at 50% 52.95%, rgba(130, 93, 38, 0.6509803922) 0%, rgba(84, 60, 23, 0.6509803922) 100%);
+  background: radial-gradient(47.05% 47.05% at 50% 52.95%, rgba(130, 93, 38, 0.6509803922) 0%, rgba(84, 60, 23, 0.6509803922) 100%), url(/src/img/main/discount-bg.png) no-repeat center/cover;
   max-height: 373px;
   height: 100%;
   width: 100%;
+  padding: 10% 0 10% 3%;
+}
+.discount-date {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.035em;
+}
+.discount-size {
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 49px;
+  letter-spacing: 0.035em;
 }
 
 .update {
@@ -35,4 +57,8 @@
 
 .shop-btn {
   background: #F09000;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1% 2%;
 }/*# sourceMappingURL=main.css.map */
