@@ -6,12 +6,10 @@
 {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 8fr 6fr;
+    grid-template-rows: 50% 35%;
     grid-template-areas: "discount discount discount" "update vipe priveledge";
     gap: 20px;
-    p{
-        color: #fefefe;
-    }
+
     
     &__item
     {
@@ -32,7 +30,10 @@
     max-height: 373px;
     height: 100%;
     width: 100%;
-    padding: 10% 0 10% 3%;
+    padding: 5% 0 10% 3%;
+    p{
+        color: #fefefe;
+    }
 
     &-date
     {
@@ -53,11 +54,68 @@
 .update
 {
     grid-area: update;
+    &-wrap
+    {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 0 3% 5%;
+    gap: 15px;
+    }
+    //border-radius: 10px;
+    gap: 0px;
+    &-btn
+    {
+        background: #242119;
+        border-radius: 0 0 10px 10px;
+    }
+    &-date
+    {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.035em;
+    }
+
+    &-changes-list
+    {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #070707;
+    }
+}
+
+.secondary-info
+{
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+color: #00000080;
 }
 
 .vipe
 {
     grid-area: vipe;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0px;
+    justify-content: center;
+
+    &-header
+    {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        letter-spacing: 0.035em;
+    }
+    &-days-count
+    {
+        color: #F09000;
+        font-weight: 700;
+        font-size: 77px;
+        line-height: 78px;
+    }
 }
 
 .priveledge
@@ -69,5 +127,6 @@
 {
     background: #F09000;
     width: fit-content;
-    padding: 1% 2%;
+    padding: 0% 1%;
 }
+
