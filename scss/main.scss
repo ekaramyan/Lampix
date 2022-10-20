@@ -1,3 +1,9 @@
+.central
+{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
 .top
 {
     padding: 0;
@@ -6,7 +12,7 @@
 {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 50% 35%;
+    grid-template-rows: 45% 30%;
     grid-template-areas: "discount discount discount" "update vipe priveledge";
     gap: 20px;
 
@@ -38,7 +44,7 @@
     &-date
     {
         font-weight: 500;
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: 24px;
         letter-spacing: 0.035em;
     }
@@ -59,7 +65,8 @@
     {
     display: flex;
     flex-direction: column;
-    padding: 3% 0 3% 5%;
+    justify-content: center;
+    align-content: space-around;
     gap: 15px;
     }
     //border-radius: 10px;
@@ -73,13 +80,15 @@
     &-date
     {
     font-weight: 700;
-    font-size: 25px;
+    font-size: 1.563rem;
     line-height: 30px;
     letter-spacing: 0.035em;
     }
 
     &-changes-list
     {
+    overflow-y: auto;
+    max-height: 60px;
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
@@ -166,7 +175,7 @@ color: #00000080;
         font-weight: 600;
         font-size: 14px;
         line-height: 17px;
-        
+
         }
     }
 }
