@@ -634,6 +634,19 @@
   .shop-cards {
     grid-template-columns: repeat(3, 1fr);
   }
+  .main-cards {
+    display: flex;
+  }
+  .main-cards__item {
+    display: none;
+  }
+  .discount {
+    display: flex;
+    max-height: -webkit-max-content;
+    max-height: -moz-max-content;
+    max-height: max-content;
+    padding: 0%;
+  }
 }
 @media screen and (max-width: 430px) {
   .burger-menu {

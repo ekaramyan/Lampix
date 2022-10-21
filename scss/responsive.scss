@@ -382,6 +382,23 @@
        {
         grid-template-columns: repeat(3, 1fr);
        }
+       .main-cards
+       {
+        display: flex;
+        height: 100%;
+        &__item
+        {
+         display: none;
+        }
+
+       }
+       .discount
+       {
+        display: flex;
+        max-height: max-content;
+        padding: 0%;
+       }
+       
 }
 
 @media screen and (max-width: 430px) 
