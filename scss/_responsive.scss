@@ -385,17 +385,18 @@
        }
        .main-cards
        {
-        display: flex;
+        display: block;
         height: 100%;
+        width: 90%;
         &__item
         {
          display: none;
         }
-
        }
        .discount
        {
         display: inline-flex;
+        flex: 1;
         max-height: max-content;
         width: 100%;
         padding: 2% 2%;
@@ -414,7 +415,10 @@
         line-height: 107.9%;
         }
        }
-       
+       .shop-btn
+       {
+        padding: 1% 2%;
+       }
 }
 
 @media screen and (max-width: 430px) 
