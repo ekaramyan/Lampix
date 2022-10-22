@@ -50,8 +50,7 @@
   color: #000;
   background: #F3F3F3;
   border: 1px solid rgba(215, 215, 215, 0.2862745098);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   border-radius: 11px;
 }
 
@@ -64,15 +63,10 @@
   display: flex;
   justify-content: flex-end;
   margin-right: 50px;
-  -moz-column-gap: 15px;
-       column-gap: 15px;
+  column-gap: 15px;
 }
 .header__logos li {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
 }
 .header__logos i {
@@ -111,8 +105,7 @@
 }
 .online-switch {
   display: inline-flex;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
   text-align: center;
 }
 .online-count {
@@ -167,6 +160,8 @@ input:focus + .switch-slider {
 }
 
 input:checked + .switch-slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
   transform: translateX(13px);
 }
 
@@ -209,8 +204,6 @@ input:checked + .switch-slider:before {
   background: none;
   border: none;
   display: none;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   align-self: center;
   transition: 0.3s;
@@ -315,8 +308,7 @@ input:checked + .switch-slider:before {
   align-items: center;
   justify-content: center;
   color: rgba(255, 255, 255, 0.5019607843);
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
   width: 100%;
   height: 100%;
   transition: 0.5s;
@@ -403,8 +395,7 @@ input:checked + .switch-slider:before {
   width: 100%;
   align-items: center;
   justify-content: flex-end;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
+  column-gap: 40px;
   row-gap: 10px;
 }
 .upper-buttons {
@@ -444,8 +435,6 @@ input:checked + .switch-slider:before {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -586,8 +575,7 @@ input:checked + .switch-slider:before {
   justify-content: space-between;
   align-items: flex-start;
 }
-
-.priveledge {
+.info-text__item-priveledge {
   color: #FF9800;
 }
 
@@ -655,8 +643,6 @@ input:checked + .switch-slider:before {
   font-family: "Montserrat";
   font-size: 22px;
   letter-spacing: 0.03em;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   font-weight: 600;
   line-height: 22px;
@@ -684,9 +670,7 @@ input:checked + .switch-slider:before {
 }
 
 .slider {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   width: 100%; /* Full-width */
   height: 25px; /* Specified height */
   background: #d3d3d3; /* Grey background */
@@ -736,8 +720,7 @@ input:checked + .switch-slider:before {
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.015em;
-  -webkit-backdrop-filter: blur(2.5px);
-          backdrop-filter: blur(2.5px);
+  backdrop-filter: blur(2.5px);
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 11px;
   border: none;
@@ -799,8 +782,6 @@ input:checked + .switch-slider:before {
 .skin {
   display: flex;
   /* background: url(src/img/cards/skin.png) no-repeat; */
-  max-height: -webkit-fit-content;
-  max-height: -moz-fit-content;
   max-height: fit-content;
   height: auto;
   width: 50%;
@@ -875,8 +856,6 @@ input:checked + .switch-slider:before {
   background: #FFD699;
   font-weight: 600;
   padding: 3% 10%;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   font-size: 1.125rem;
   transition: 0.5s;
@@ -886,386 +865,6 @@ input:checked + .switch-slider:before {
   color: rgba(0, 0, 0, 0.737254902);
 }
 
-@media screen and (max-width: 900px) {
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    padding: 50px 0;
-  }
-  .header__logos {
-    display: none;
-  }
-  .header__account {
-    display: grid;
-    grid-template-columns: minmax(24px, 56px), minmax(35px, 65px);
-    grid-template-rows: 50% 50%;
-    grid-template-areas: "img name" "img coins";
-    -moz-column-gap: 10px;
-         column-gap: 10px;
-    max-width: 130px;
-    width: 100%;
-    max-height: 56px;
-    align-items: center;
-    align-self: center;
-    justify-content: center;
-    align-content: center;
-    color: #000;
-  }
-  .header__account p {
-    color: #000;
-  }
-  .account__img img {
-    border-radius: 50%;
-  }
-  .account__name {
-    font-weight: 700;
-  }
-  .account__coins {
-    font-size: 10pt;
-    font-weight: 500;
-    letter-spacing: -0.005em;
-  }
-  .search {
-    justify-content: center;
-  }
-  .online {
-    grid-area: online;
-    display: none;
-  }
-  .online-count {
-    color: #fff;
-  }
-  .online span {
-    color: rgba(255, 255, 255, 0.5019607843);
-  }
-  .logo-phones {
-    display: flex;
-    color: #000;
-    font-weight: 700;
-  }
-  .cards {
-    grid-template-areas: "about-user about-user double-auth double-auth" "about-user about-user double-auth     double-auth" "coin-buy   coin-buy    skins          skins" "coin-buy   coin-buy    skins              skins";
-  }
-  .sidebar {
-    display: none;
-  }
-  .info {
-    font-size: 16px;
-  }
-  .info-text {
-    font-size: 12px;
-  }
-  .btn {
-    font-size: 12px;
-  }
-  .info-coin {
-    font-size: 20px;
-  }
-  .double-auth {
-    max-height: 100px;
-  }
-  .skin {
-    display: none;
-  }
-  .skin-bg {
-    width: 100%;
-  }
-  .footer-buttons {
-    display: flex;
-    justify-content: center;
-  }
-  .upper {
-    margin: 0;
-  }
-  .burger-menu {
-    display: flex;
-    position: fixed;
-    z-index: 5;
-    opacity: 0;
-    width: 300px;
-    height: 100%;
-    transform: translate(-120%, 0);
-    transition: all linear 0.3s;
-    align-content: center;
-    flex-wrap: wrap;
-  }
-  .burger-menu__button {
-    display: flex;
-    width: 15px;
-  }
-  .burger-menu.active {
-    opacity: 1;
-    transform: translate(-20%, 0);
-  }
-  .menu.active {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    box-shadow: 7px 0px 60px rgba(0, 0, 0, 0.05);
-  }
-  .menu-close {
-    justify-content: center;
-    width: 120%;
-    color: rgba(255, 111, 111, 0.5019607843);
-  }
-}
-@media screen and (max-width: 660px) {
-  .container {
-    width: 100%;
-    overflow-x: hidden;
-  }
-  .searchTerm {
-    width: 25%;
-    justify-content: center;
-    border: none;
-  }
-  .searchTerm.active {
-    width: 100%;
-  }
-  .search-wrap {
-    max-width: 100px;
-    width: 100%;
-  }
-  .pp-wrapper {
-    padding: 0;
-  }
-  .coin-buy__count {
-    font-size: 15pt;
-  }
-  .coin-buy__info {
-    padding: 0;
-  }
-  .buy-btn {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-  .promo {
-    height: 30px;
-  }
-  .cards {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 100%;
-  }
-  .double-auth {
-    order: 3;
-    padding: 10px 0;
-  }
-  .double-auth__btn {
-    padding: 4px 10px;
-  }
-  .personal-page {
-    display: flex;
-    align-items: center;
-    max-width: 90vw;
-    width: 100%;
-    text-align: center;
-  }
-  .skins {
-    display: none;
-  }
-  .info {
-    padding: 0 0 0 0;
-  }
-  .p-text {
-    justify-content: center;
-    width: 100%;
-    margin: 0;
-  }
-  .footer {
-    padding: 20px 0 0 0;
-    display: flex;
-  }
-  .footer-logo i {
-    font-size: 25px;
-  }
-  .footer-social {
-    display: none;
-  }
-  .upper {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 0;
-  }
-  .upper-buttons {
-    display: flex;
-    gap: 20px;
-  }
-  .upper-buttons i {
-    font-size: 35px;
-  }
-  .logo-wrap {
-    width: 50px;
-  }
-  .logo-text {
-    font-size: 14pt;
-  }
-  .copyright {
-    align-self: flex-start;
-  }
-  .central {
-    width: 100%;
-    align-items: center;
-    padding: 0%;
-  }
-  .down {
-    display: none;
-  }
-  .oferta {
-    align-self: flex-start;
-    font-weight: 500;
-  }
-  .text-1 {
-    display: flex;
-    flex-direction: column;
-    gap: 11px;
-    margin-bottom: 30px;
-    background: #222222;
-    padding: 0 16px;
-  }
-  .text-2 {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 0 16px 5% 16px;
-    background: #1A1A1A;
-  }
-  .account__name {
-    font-size: 12pt;
-  }
-  .shop-cards {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .main-cards {
-    display: flex;
-    height: 100%;
-  }
-  .main-cards__item {
-    display: none;
-  }
-  .discount {
-    display: flex;
-    max-height: -webkit-max-content;
-    max-height: -moz-max-content;
-    max-height: max-content;
-    width: 100%;
-    padding: 1% 2%;
-  }
-  .discount-date {
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 16px;
-  }
-  .discount-size p {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 107.9%;
-  }
-}
-@media screen and (max-width: 430px) {
-  .burger-menu {
-    transform: translate(-120%, 0);
-  }
-  .burger-menu.active {
-    transform: translate(0, 0);
-  }
-  .search-wrap {
-    max-width: 80px;
-    width: 100%;
-  }
-  .logo-phones {
-    font-size: 14pt;
-    text-align: center;
-  }
-  .header__account {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 70px;
-  }
-  .account__name {
-    font-size: 10pt;
-  }
-  .account__coins {
-    font-size: 8pt;
-  }
-  .account__img {
-    width: 24px;
-    height: 24px;
-    margin: 0;
-    border-radius: 50%;
-  }
-  .shop-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .image img {
-    max-width: 200px;
-    max-height: 250px;
-    height: 100%;
-    width: 100%;
-  }
-  .discount {
-    display: flex;
-    max-height: -webkit-max-content;
-    max-height: -moz-max-content;
-    max-height: max-content;
-    padding: 0%;
-  }
-  .discount-date {
-    font-size: 10px;
-    line-height: 16px;
-  }
-  .discount-info {
-    font-size: 16px;
-    line-height: 107.9%;
-  }
-}
-@media (max-width: 350px) {
-  .header__account {
-    width: 60px;
-  }
-  .logo-phones {
-    font-size: 10pt;
-  }
-  .shop-cards {
-    display: flex;
-  }
-}
-@media (max-height: 720px) {
-  .cards {
-    height: 100%;
-    gap: 5px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "about-user  double-auth" "coin-buy     skins";
-    padding-bottom: 20px;
-  }
-  .burger-menu {
-    transform: translate(-120%, 0);
-  }
-  .burger-menu.active {
-    transform: translate(0, 0);
-  }
-  .search-wrap {
-    max-width: 90px;
-  }
-  .card {
-    max-height: 170px;
-  }
-  .image img {
-    max-width: 80px;
-    max-height: 100px;
-    height: 100%;
-    width: 100%;
-  }
-}
 .central {
   padding: 0 1%;
 }
@@ -1371,386 +970,6 @@ input:checked + .switch-slider:before {
   width: 140%;
 }
 
-@media screen and (max-width: 900px) {
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    padding: 50px 0;
-  }
-  .header__logos {
-    display: none;
-  }
-  .header__account {
-    display: grid;
-    grid-template-columns: minmax(24px, 56px), minmax(35px, 65px);
-    grid-template-rows: 50% 50%;
-    grid-template-areas: "img name" "img coins";
-    -moz-column-gap: 10px;
-         column-gap: 10px;
-    max-width: 130px;
-    width: 100%;
-    max-height: 56px;
-    align-items: center;
-    align-self: center;
-    justify-content: center;
-    align-content: center;
-    color: #000;
-  }
-  .header__account p {
-    color: #000;
-  }
-  .account__img img {
-    border-radius: 50%;
-  }
-  .account__name {
-    font-weight: 700;
-  }
-  .account__coins {
-    font-size: 10pt;
-    font-weight: 500;
-    letter-spacing: -0.005em;
-  }
-  .search {
-    justify-content: center;
-  }
-  .online {
-    grid-area: online;
-    display: none;
-  }
-  .online-count {
-    color: #fff;
-  }
-  .online span {
-    color: rgba(255, 255, 255, 0.5019607843);
-  }
-  .logo-phones {
-    display: flex;
-    color: #000;
-    font-weight: 700;
-  }
-  .cards {
-    grid-template-areas: "about-user about-user double-auth double-auth" "about-user about-user double-auth     double-auth" "coin-buy   coin-buy    skins          skins" "coin-buy   coin-buy    skins              skins";
-  }
-  .sidebar {
-    display: none;
-  }
-  .info {
-    font-size: 16px;
-  }
-  .info-text {
-    font-size: 12px;
-  }
-  .btn {
-    font-size: 12px;
-  }
-  .info-coin {
-    font-size: 20px;
-  }
-  .double-auth {
-    max-height: 100px;
-  }
-  .skin {
-    display: none;
-  }
-  .skin-bg {
-    width: 100%;
-  }
-  .footer-buttons {
-    display: flex;
-    justify-content: center;
-  }
-  .upper {
-    margin: 0;
-  }
-  .burger-menu {
-    display: flex;
-    position: fixed;
-    z-index: 5;
-    opacity: 0;
-    width: 300px;
-    height: 100%;
-    transform: translate(-120%, 0);
-    transition: all linear 0.3s;
-    align-content: center;
-    flex-wrap: wrap;
-  }
-  .burger-menu__button {
-    display: flex;
-    width: 15px;
-  }
-  .burger-menu.active {
-    opacity: 1;
-    transform: translate(-20%, 0);
-  }
-  .menu.active {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    box-shadow: 7px 0px 60px rgba(0, 0, 0, 0.05);
-  }
-  .menu-close {
-    justify-content: center;
-    width: 120%;
-    color: rgba(255, 111, 111, 0.5019607843);
-  }
-}
-@media screen and (max-width: 660px) {
-  .container {
-    width: 100%;
-    overflow-x: hidden;
-  }
-  .searchTerm {
-    width: 25%;
-    justify-content: center;
-    border: none;
-  }
-  .searchTerm.active {
-    width: 100%;
-  }
-  .search-wrap {
-    max-width: 100px;
-    width: 100%;
-  }
-  .pp-wrapper {
-    padding: 0;
-  }
-  .coin-buy__count {
-    font-size: 15pt;
-  }
-  .coin-buy__info {
-    padding: 0;
-  }
-  .buy-btn {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-  .promo {
-    height: 30px;
-  }
-  .cards {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 100%;
-  }
-  .double-auth {
-    order: 3;
-    padding: 10px 0;
-  }
-  .double-auth__btn {
-    padding: 4px 10px;
-  }
-  .personal-page {
-    display: flex;
-    align-items: center;
-    max-width: 90vw;
-    width: 100%;
-    text-align: center;
-  }
-  .skins {
-    display: none;
-  }
-  .info {
-    padding: 0 0 0 0;
-  }
-  .p-text {
-    justify-content: center;
-    width: 100%;
-    margin: 0;
-  }
-  .footer {
-    padding: 20px 0 0 0;
-    display: flex;
-  }
-  .footer-logo i {
-    font-size: 25px;
-  }
-  .footer-social {
-    display: none;
-  }
-  .upper {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 0;
-  }
-  .upper-buttons {
-    display: flex;
-    gap: 20px;
-  }
-  .upper-buttons i {
-    font-size: 35px;
-  }
-  .logo-wrap {
-    width: 50px;
-  }
-  .logo-text {
-    font-size: 14pt;
-  }
-  .copyright {
-    align-self: flex-start;
-  }
-  .central {
-    width: 100%;
-    align-items: center;
-    padding: 0%;
-  }
-  .down {
-    display: none;
-  }
-  .oferta {
-    align-self: flex-start;
-    font-weight: 500;
-  }
-  .text-1 {
-    display: flex;
-    flex-direction: column;
-    gap: 11px;
-    margin-bottom: 30px;
-    background: #222222;
-    padding: 0 16px;
-  }
-  .text-2 {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 0 16px 5% 16px;
-    background: #1A1A1A;
-  }
-  .account__name {
-    font-size: 12pt;
-  }
-  .shop-cards {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .main-cards {
-    display: flex;
-    height: 100%;
-  }
-  .main-cards__item {
-    display: none;
-  }
-  .discount {
-    display: flex;
-    max-height: -webkit-max-content;
-    max-height: -moz-max-content;
-    max-height: max-content;
-    width: 100%;
-    padding: 1% 2%;
-  }
-  .discount-date {
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 16px;
-  }
-  .discount-size p {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 107.9%;
-  }
-}
-@media screen and (max-width: 430px) {
-  .burger-menu {
-    transform: translate(-120%, 0);
-  }
-  .burger-menu.active {
-    transform: translate(0, 0);
-  }
-  .search-wrap {
-    max-width: 80px;
-    width: 100%;
-  }
-  .logo-phones {
-    font-size: 14pt;
-    text-align: center;
-  }
-  .header__account {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 70px;
-  }
-  .account__name {
-    font-size: 10pt;
-  }
-  .account__coins {
-    font-size: 8pt;
-  }
-  .account__img {
-    width: 24px;
-    height: 24px;
-    margin: 0;
-    border-radius: 50%;
-  }
-  .shop-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .image img {
-    max-width: 200px;
-    max-height: 250px;
-    height: 100%;
-    width: 100%;
-  }
-  .discount {
-    display: flex;
-    max-height: -webkit-max-content;
-    max-height: -moz-max-content;
-    max-height: max-content;
-    padding: 0%;
-  }
-  .discount-date {
-    font-size: 10px;
-    line-height: 16px;
-  }
-  .discount-info {
-    font-size: 16px;
-    line-height: 107.9%;
-  }
-}
-@media (max-width: 350px) {
-  .header__account {
-    width: 60px;
-  }
-  .logo-phones {
-    font-size: 10pt;
-  }
-  .shop-cards {
-    display: flex;
-  }
-}
-@media (max-height: 720px) {
-  .cards {
-    height: 100%;
-    gap: 5px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "about-user  double-auth" "coin-buy     skins";
-    padding-bottom: 20px;
-  }
-  .burger-menu {
-    transform: translate(-120%, 0);
-  }
-  .burger-menu.active {
-    transform: translate(0, 0);
-  }
-  .search-wrap {
-    max-width: 90px;
-  }
-  .card {
-    max-height: 170px;
-  }
-  .image img {
-    max-width: 80px;
-    max-height: 100px;
-    height: 100%;
-    width: 100%;
-  }
-}
 .central {
   display: flex;
   gap: 10px;
@@ -1908,392 +1127,10 @@ input:checked + .switch-slider:before {
 
 .shop-btn {
   background: #F09000;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   padding: 0% 1%;
 }
 
-@media screen and (max-width: 900px) {
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    padding: 50px 0;
-  }
-  .header__logos {
-    display: none;
-  }
-  .header__account {
-    display: grid;
-    grid-template-columns: minmax(24px, 56px), minmax(35px, 65px);
-    grid-template-rows: 50% 50%;
-    grid-template-areas: "img name" "img coins";
-    -moz-column-gap: 10px;
-         column-gap: 10px;
-    max-width: 130px;
-    width: 100%;
-    max-height: 56px;
-    align-items: center;
-    align-self: center;
-    justify-content: center;
-    align-content: center;
-    color: #000;
-  }
-  .header__account p {
-    color: #000;
-  }
-  .account__img img {
-    border-radius: 50%;
-  }
-  .account__name {
-    font-weight: 700;
-  }
-  .account__coins {
-    font-size: 10pt;
-    font-weight: 500;
-    letter-spacing: -0.005em;
-  }
-  .search {
-    justify-content: center;
-  }
-  .online {
-    grid-area: online;
-    display: none;
-  }
-  .online-count {
-    color: #fff;
-  }
-  .online span {
-    color: rgba(255, 255, 255, 0.5019607843);
-  }
-  .logo-phones {
-    display: flex;
-    color: #000;
-    font-weight: 700;
-  }
-  .cards {
-    grid-template-areas: "about-user about-user double-auth double-auth" "about-user about-user double-auth     double-auth" "coin-buy   coin-buy    skins          skins" "coin-buy   coin-buy    skins              skins";
-  }
-  .sidebar {
-    display: none;
-  }
-  .info {
-    font-size: 16px;
-  }
-  .info-text {
-    font-size: 12px;
-  }
-  .btn {
-    font-size: 12px;
-  }
-  .info-coin {
-    font-size: 20px;
-  }
-  .double-auth {
-    max-height: 100px;
-  }
-  .skin {
-    display: none;
-  }
-  .skin-bg {
-    width: 100%;
-  }
-  .footer-buttons {
-    display: flex;
-    justify-content: center;
-  }
-  .upper {
-    margin: 0;
-  }
-  .burger-menu {
-    display: flex;
-    position: fixed;
-    z-index: 5;
-    opacity: 0;
-    width: 300px;
-    height: 100%;
-    transform: translate(-120%, 0);
-    transition: all linear 0.3s;
-    align-content: center;
-    flex-wrap: wrap;
-  }
-  .burger-menu__button {
-    display: flex;
-    width: 15px;
-  }
-  .burger-menu.active {
-    opacity: 1;
-    transform: translate(-20%, 0);
-  }
-  .menu.active {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    box-shadow: 7px 0px 60px rgba(0, 0, 0, 0.05);
-  }
-  .menu-close {
-    justify-content: center;
-    width: 120%;
-    color: rgba(255, 111, 111, 0.5019607843);
-  }
-}
-@media screen and (max-width: 660px) {
-  .container {
-    width: 100%;
-    overflow-x: hidden;
-  }
-  .searchTerm {
-    width: 25%;
-    justify-content: center;
-    border: none;
-  }
-  .searchTerm.active {
-    width: 100%;
-  }
-  .search-wrap {
-    max-width: 100px;
-    width: 100%;
-  }
-  .pp-wrapper {
-    padding: 0;
-  }
-  .coin-buy__count {
-    font-size: 15pt;
-  }
-  .coin-buy__info {
-    padding: 0;
-  }
-  .buy-btn {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-  .promo {
-    height: 30px;
-  }
-  .cards {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 100%;
-  }
-  .double-auth {
-    order: 3;
-    padding: 10px 0;
-  }
-  .double-auth__btn {
-    padding: 4px 10px;
-  }
-  .personal-page {
-    display: flex;
-    align-items: center;
-    max-width: 90vw;
-    width: 100%;
-    text-align: center;
-  }
-  .skins {
-    display: none;
-  }
-  .info {
-    padding: 0 0 0 0;
-  }
-  .p-text {
-    justify-content: center;
-    width: 100%;
-    margin: 0;
-  }
-  .footer {
-    padding: 20px 0 0 0;
-    display: flex;
-  }
-  .footer-logo i {
-    font-size: 25px;
-  }
-  .footer-social {
-    display: none;
-  }
-  .upper {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 0;
-  }
-  .upper-buttons {
-    display: flex;
-    gap: 20px;
-  }
-  .upper-buttons i {
-    font-size: 35px;
-  }
-  .logo-wrap {
-    width: 50px;
-  }
-  .logo-text {
-    font-size: 14pt;
-  }
-  .copyright {
-    align-self: flex-start;
-  }
-  .central {
-    width: 100%;
-    align-items: center;
-    padding: 0%;
-  }
-  .down {
-    display: none;
-  }
-  .oferta {
-    align-self: flex-start;
-    font-weight: 500;
-  }
-  .text-1 {
-    display: flex;
-    flex-direction: column;
-    gap: 11px;
-    margin-bottom: 30px;
-    background: #222222;
-    padding: 0 16px;
-  }
-  .text-2 {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 0 16px 5% 16px;
-    background: #1A1A1A;
-  }
-  .account__name {
-    font-size: 12pt;
-  }
-  .shop-cards {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .main-cards {
-    display: flex;
-    height: 100%;
-  }
-  .main-cards__item {
-    display: none;
-  }
-  .discount {
-    display: flex;
-    max-height: -webkit-max-content;
-    max-height: -moz-max-content;
-    max-height: max-content;
-    width: 100%;
-    padding: 1% 2%;
-  }
-  .discount-date {
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 16px;
-  }
-  .discount-size p {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 107.9%;
-  }
-}
-@media screen and (max-width: 430px) {
-  .burger-menu {
-    transform: translate(-120%, 0);
-  }
-  .burger-menu.active {
-    transform: translate(0, 0);
-  }
-  .search-wrap {
-    max-width: 80px;
-    width: 100%;
-  }
-  .logo-phones {
-    font-size: 14pt;
-    text-align: center;
-  }
-  .header__account {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 70px;
-  }
-  .account__name {
-    font-size: 10pt;
-  }
-  .account__coins {
-    font-size: 8pt;
-  }
-  .account__img {
-    width: 24px;
-    height: 24px;
-    margin: 0;
-    border-radius: 50%;
-  }
-  .shop-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .image img {
-    max-width: 200px;
-    max-height: 250px;
-    height: 100%;
-    width: 100%;
-  }
-  .discount {
-    display: flex;
-    max-height: -webkit-max-content;
-    max-height: -moz-max-content;
-    max-height: max-content;
-    padding: 0%;
-  }
-  .discount-date {
-    font-size: 10px;
-    line-height: 16px;
-  }
-  .discount-info {
-    font-size: 16px;
-    line-height: 107.9%;
-  }
-}
-@media (max-width: 350px) {
-  .header__account {
-    width: 60px;
-  }
-  .logo-phones {
-    font-size: 10pt;
-  }
-  .shop-cards {
-    display: flex;
-  }
-}
-@media (max-height: 720px) {
-  .cards {
-    height: 100%;
-    gap: 5px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "about-user  double-auth" "coin-buy     skins";
-    padding-bottom: 20px;
-  }
-  .burger-menu {
-    transform: translate(-120%, 0);
-  }
-  .burger-menu.active {
-    transform: translate(0, 0);
-  }
-  .search-wrap {
-    max-width: 90px;
-  }
-  .card {
-    max-height: 170px;
-  }
-  .image img {
-    max-width: 80px;
-    max-height: 100px;
-    height: 100%;
-    width: 100%;
-  }
-}
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -2302,8 +1139,7 @@ body {
   position: relative;
   display: grid;
   grid-template-columns: 1.3fr 4fr;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  column-gap: 20px;
   grid: row;
   align-items: center;
   height: 100vh;
@@ -2317,8 +1153,6 @@ body {
 
 .top {
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   display: flex;
   align-items: center;
@@ -2332,8 +1166,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: -webkit-max-content;
-    height: -moz-max-content;
     height: max-content;
     padding: 50px 0;
   }
@@ -2345,8 +1177,7 @@ body {
     grid-template-columns: minmax(24px, 56px), minmax(35px, 65px);
     grid-template-rows: 50% 50%;
     grid-template-areas: "img name" "img coins";
-    -moz-column-gap: 10px;
-         column-gap: 10px;
+    column-gap: 10px;
     max-width: 130px;
     width: 100%;
     max-height: 56px;
@@ -2480,8 +1311,6 @@ body {
     padding: 0;
   }
   .buy-btn {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
   }
   .promo {
@@ -2592,19 +1421,17 @@ body {
     display: none;
   }
   .discount {
-    display: flex;
-    max-height: -webkit-max-content;
-    max-height: -moz-max-content;
+    display: inline-flex;
     max-height: max-content;
     width: 100%;
-    padding: 1% 2%;
+    padding: 2% 2%;
   }
   .discount-date {
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
   }
-  .discount-size p {
+  .discount-size {
     font-weight: 700;
     font-size: 18px;
     line-height: 107.9%;
@@ -2654,16 +1481,13 @@ body {
   }
   .discount {
     display: flex;
-    max-height: -webkit-max-content;
-    max-height: -moz-max-content;
     max-height: max-content;
-    padding: 0%;
   }
   .discount-date {
     font-size: 10px;
     line-height: 16px;
   }
-  .discount-info {
+  .discount-size {
     font-size: 16px;
     line-height: 107.9%;
   }

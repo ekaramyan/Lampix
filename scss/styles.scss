@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-@import "header.scss", "sidebar.scss", "footer.scss", "personal-page.scss", "shop.scss", "main.scss";
+@import "_header", "_sidebar", "_footer", "_personal-page", "_shop", "_main";
 
 
 
@@ -41,4 +41,4 @@ body
 
 
 
-@import "responsive.scss";
+@import "_responsive";
