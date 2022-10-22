@@ -206,7 +206,7 @@
     .container
     {
         width: 100vw;
-       
+       overflow-x: hidden;
     }
 
     .searchTerm
@@ -341,6 +341,7 @@
        {
         width: 100%;
         align-items: center;
+        padding: 0%;
        }
        .down
        {
@@ -397,6 +398,18 @@
         display: flex;
         max-height: max-content;
         padding: 0%;
+        &-date
+        {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        }
+        &-info
+        {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 107.9%;
+        }
        }
        
 }
@@ -459,6 +472,23 @@
         max-height: 250px;
         height: 100%;
         width: 100%;
+    }
+
+    .discount
+    {
+     display: flex;
+     max-height: max-content;
+     padding: 0%;
+     &-date
+     {
+     font-size: 10px;
+     line-height: 16px;
+     }
+     &-info
+     {
+     font-size: 16px;
+     line-height: 107.9%;
+     }
     }
 }
 

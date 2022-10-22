@@ -127,6 +127,7 @@
 @media screen and (max-width: 660px) {
   .container {
     width: 100vw;
+    overflow-x: hidden;
   }
   .searchTerm {
     width: 25%;
@@ -224,6 +225,7 @@
   .central {
     width: 100%;
     align-items: center;
+    padding: 0%;
   }
   .down {
     display: none;
@@ -267,6 +269,16 @@
     max-height: max-content;
     padding: 0%;
   }
+  .discount-date {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .discount-info {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 107.9%;
+  }
 }
 @media screen and (max-width: 430px) {
   .burger-menu {
@@ -309,6 +321,21 @@
     max-height: 250px;
     height: 100%;
     width: 100%;
+  }
+  .discount {
+    display: flex;
+    max-height: -webkit-max-content;
+    max-height: -moz-max-content;
+    max-height: max-content;
+    padding: 0%;
+  }
+  .discount-date {
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .discount-info {
+    font-size: 16px;
+    line-height: 107.9%;
   }
 }
 @media (max-width: 350px) {
