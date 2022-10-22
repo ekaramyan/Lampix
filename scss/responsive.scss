@@ -205,7 +205,7 @@
 {
     .container
     {
-        width: 100vw;
+        width: 100%;
        overflow-x: hidden;
     }
 
@@ -397,14 +397,17 @@
        {
         display: flex;
         max-height: max-content;
-        padding: 0%;
+        width: 100%;
+        padding: 2% 2%;
+        
         &-date
         {
         font-weight: 500;
         font-size: 13px;
         line-height: 16px;
         }
-        &-info
+
+        &-size
         {
         font-weight: 700;
         font-size: 18px;
@@ -478,18 +481,20 @@
     {
      display: flex;
      max-height: max-content;
-     padding: 0%;
+     
      &-date
      {
      font-size: 10px;
      line-height: 16px;
      }
-     &-info
+     &-size
      {
      font-size: 16px;
      line-height: 107.9%;
      }
     }
+
+
 }
 
 @media (max-width: 350px)

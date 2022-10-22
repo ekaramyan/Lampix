@@ -91,20 +91,22 @@
     font-size: 15px;
     gap: 5px;
     /* padding-bottom: 20px; */
-}
-&-text__item
+&__item
 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-}
-}
 
-
-.priveledge
+    &-priveledge
 {
     color: #FF9800;
 }
+}
+}
+}
+
+
+
 .coin-count
 {
     font-weight: 700;

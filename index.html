@@ -1,226 +1,280 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-    />
-    <link rel="shortcut icon" href="../src/img/icon/icon.svg" type="image/x-icon">
-    <link rel='stylesheet' type='text/css' media='screen' href='null.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
-    
-    <meta name="viewport" content="width=device-width">
-    <title>Lampix Server</title>
-  </head>
-  <body>
-<div class="container">
-<section>
-  <div class="burger-menu">
-     <div class="burger-menu__content">
 
-            <div class="online menu-online">
-              <div class="burger-menu__button menu-close"> <i><i class="fa-solid fa-xmark"></i></i></div>
-              <div class="online-switch">
-                <p class="online-text menu-online-text">Online</p>
-                <label class="switch">
-                  <input type="checkbox">
-                  <span class="switch-slider round"></span>
-                </label>
-              </div>
-              <p class=" online-count">200<span>/1000</span></p>  
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="../src/img/icon/icon.svg" type="image/x-icon">
+  <link rel='stylesheet' type='text/css' media='screen' href='null.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
+
+  <meta name="viewport" content="width=device-width">
+  <title>Lampix Server</title>
+</head>
+
+<body>
+  <div class="container">
+    <section>
+      <div class="burger-menu">
+        <div class="burger-menu__content">
+
+          <div class="online menu-online">
+            <div class="burger-menu__button menu-close"> <i><i class="fa-solid fa-xmark"></i></i></div>
+            <div class="online-switch">
+              <p class="online-text menu-online-text">Online</p>
+              <label class="switch">
+                <input type="checkbox">
+                <span class="switch-slider round"></span>
+              </label>
             </div>
-
-      <ul class="menu">
-        
-        <li class="menu__item"><i class="fa-sharp fa-solid fa-house"></i><a href="main.html"><p class="menu__item-text">главная</p></a></li>
-        <li class="menu__item"><i class="fa-solid fa-window-maximize"></i><a href="forum.html"><p class="menu__item-text">форум</p></a></li>
-        <li class="menu__item"><i class="fa-sharp fa-solid fa-credit-card"></i><a href="shop.html"><p class="menu__item-text">магазин</p></a></li>
-        <li class="menu__item"><i class="fa-solid fa-message"></i><a href="rules.html"><p class="menu__item-text">правила</p></a></li>
-        <li class="menu__item"><i class="fa-regular fa-circle-question"></i><a href="FAQ.html"><p class="menu__item-text">FAQ</p></a></li>
-      </ul>
-    </div>
-  </div>
-
-
-    <section class="sidebar">
-      <p class="sidebar__header">lampix.net</p>
-    
-      <ul class="account">
-          <li class="account__img"><img class="" src="src/img/personal-cabinet/avatar.jpg" alt="http://dummyimage.com/56/a6a6ff"></li>
-          <li class="account__name"><p class="account__name">Dante</p></li>
-          <li class="account__coins"><p class="account__coins">666 coins</p></li>
-      </ul>
-    
-      <ul class="menu">
-        <li class="menu__item"><i class="fa-sharp fa-solid fa-house"></i><a href="main.html"><p class="menu__item-text">главная</p></a></li>
-        <li class="menu__item"><i class="fa-solid fa-window-maximize"></i><a href="forum.html"><p class="menu__item-text">форум</p></a></li>
-        <li class="menu__item"><i class="fa-sharp fa-solid fa-credit-card"></i><a href="shop.html"><p class="menu__item-text">магазин</p></a></li>
-        <li class="menu__item"><i class="fa-solid fa-message"></i><a href="rules.html"><p class="menu__item-text">правила</p></a></li>
-        <li class="menu__item"><i class="fa-regular fa-circle-question"></i><a href="FAQ.html"><p class="menu__item-text">FAQ</p></a></li>
-      </ul>
-    </section>
-</section>
-
-
-<section class="central">
-  <header class="header">
-
-      <div class="burger-menu__button" id="burger-menu__btn">
-        <img src="./src/img/personal-cabinet/burger.svg" alt="">
-      </div>
-      <p class="logo-text logo-phones">lampix.net</p>
-         <div class="search-wrap">  
-           <div class="search">
-            <input type="text" class="searchTerm" placeholder="&#128269 Search">
-            </div>
+            <p class=" online-count">200<span>/1000</span></p>
           </div>
 
-            <div class="online">
-              <div class="online-switch">
-                <p class="online-text">Online</p>
-                <label class="switch">
-                  <input type="checkbox">
-                  <span class="switch-slider round"></span>
-                </label>
-              </div>
-              <p class="online-count">200<span>/1000</span></p>  
-            </div>
+          <ul class="menu">
 
-            <ul class="header__account">
-              <li class="account__img"><img class="" src="src/img/personal-cabinet/avatar.jpg" alt="http://dummyimage.com/56/a6a6ff""></li>
-              <li class="account__name"><p class="account__name">Dante</p></li>
-              <li class="account__coins"><p class="account__coins">666 coins</p></li>
+            <li class="menu__item"><i class="fa-sharp fa-solid fa-house"></i><a href="main.html">
+                <p class="menu__item-text">главная</p>
+              </a></li>
+            <li class="menu__item"><i class="fa-solid fa-window-maximize"></i><a href="forum.html">
+                <p class="menu__item-text">форум</p>
+              </a></li>
+            <li class="menu__item"><i class="fa-sharp fa-solid fa-credit-card"></i><a href="shop.html">
+                <p class="menu__item-text">магазин</p>
+              </a></li>
+            <li class="menu__item"><i class="fa-solid fa-message"></i><a href="rules.html">
+                <p class="menu__item-text">правила</p>
+              </a></li>
+            <li class="menu__item"><i class="fa-regular fa-circle-question"></i><a href="FAQ.html">
+                <p class="menu__item-text">FAQ</p>
+              </a></li>
           </ul>
-
-            <ul class="header__logos">
-              <li class="logo header-logo telegram-logo"><a href=""><i class="fa-brands fa-telegram"></i></a></li>
-              <li class="logo header-logo vk-logo">   <a href=""><i class="fa-brands fa-vk"></i></a></li>
-              <li class="logo header-logo discord-logo"> <a href=""><i class="fa-brands fa-discord"></i></a></li>
-            </ul>
-</header>
-        <div class="personal-page">
-          
-          <div class="top">
-            <p class="p-text">Личный Кабинет</p>
-          </div>
-            <div class="cards">
-              <div class="pp about-user">
-
-                <div class="pp-wrapper">
-                <p class="info">Информация о пользователе<p> 
-                <ul class="info-text">
-                    <li class="info-text__item"> <p>Ваша Привелегия</p> <p class="priveledge">Titan</p> </li>
-                    <li class="info-text__item"> <p>Ваш Баланс</p> <p><span class="coin-count">1000</span> coins</p></li>
-                    <li class="info-text__item"> <p>Имя Пользователя</p> <p>Evil_Lord</p></li>
-                </ul>
-                <button class="btn exit-btn">Выйти</button>
-                </div>
-
-              </div>
-              <div class="pp double-auth">
-                <p class="info">2-х этапная аутентификация<p> 
-                  <button class="btn double-auth__btn">Включить</button>
-              </div>
-              <div class="pp coin-buy">
-                <div class="pp-wrapper">
-                <p class="coin-buy__info">Покупка коинов<p> 
-                  <p class="subinfo">Получите</p>
-                  <div class="coin-buy__count">1400 coins</div>
-                  <div class="slidecontainer">
-                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                   </div>
-                   <input class="promo" type="text" name class="promo-p" placeholder="(Промокод, если есть)"></input>
-
-                  <div class="bottom-container">
-                    <button class="btn buy-btn">Купить</button>
-                    <div class="price"><p>Стоимость <span class="price-count">1000₽</span></p></div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="pp skins">
-                
-
-                  <div class="skin">
-                    <img src="src/img/cards/skin.png" alt="">
-                  </div>
-                  <div class="skin-bg">
-                    <div class="skin-wrap">
-                      <p class="skin-header">Скин</p>
-                      <p class="skin-paragraph">Вы можете загрузить любой свой скин</p>
-                      <div class="skins__btn-wrapper">
-                        <form enctype="multipart/form-data" method="post">
-                          <input name="skins__btn" type="file" id="skin__file" class="field" accept="image/.png" multiple>
-                           <label class="skin__btn-wrapper" for="skin__file">
-                            <div class="skins__btn">Загрузить</div>
-                            </label>
-                        </form>
-                      </div>  
-                    </div>
-
-
-                    <!-- <img src="src/img/cards/skin-bg.png" alt="http://dummyimage.com/220/a6a6ff" > -->
-                  </div>
-              </div>
-            </div>
-
         </div>
+      </div>
 
-      </section>
-</div>
 
-    <footer class="footer">
-      <div class="upper">
+      <section class="sidebar">
+        <p class="sidebar__header">lampix.net</p>
 
-        <div class="logo-wrap">
-          <div class="site-logo">
-            <img src="./src/img/footer/LP.jpg" alt="">
-          </div>
-          <p class="logo-text">lampix.net</p>
-        </div>
-
-        <ul class="upper-buttons">
-          <li class="logo footer-logo"><a href=""><i class="fa-brands fa-telegram"></i></a></li>
-          <li class="logo footer-logo">   <a href=""><i class="fa-brands fa-vk"></i></a></li>
-          <li class="logo footer-logo"> <a href=""><i class="fa-brands fa-discord"></i></a></li>
+        <ul class="account">
+          <li class="account__img"><img class="" src="src/img/personal-cabinet/avatar.jpg"
+              alt="http://dummyimage.com/56/a6a6ff"></li>
+          <li class="account__name">
+            <p class="account__name">Dante</p>
+          </li>
+          <li class="account__coins">
+            <p class="account__coins">666 coins</p>
+          </li>
         </ul>
 
-        <div class="text-1">
-          <p class="copyright">© 2022 Lampix Все права защищены.</p>
-          <p class="inn">ИП Капорцева Валентина Александровна ИНН: 771506816381 ОГРНИП: 321774600478221</p>
+        <ul class="menu">
+          <li class="menu__item"><i class="fa-sharp fa-solid fa-house"></i><a href="main.html">
+              <p class="menu__item-text">главная</p>
+            </a></li>
+          <li class="menu__item"><i class="fa-solid fa-window-maximize"></i><a href="forum.html">
+              <p class="menu__item-text">форум</p>
+            </a></li>
+          <li class="menu__item"><i class="fa-sharp fa-solid fa-credit-card"></i><a href="shop.html">
+              <p class="menu__item-text">магазин</p>
+            </a></li>
+          <li class="menu__item"><i class="fa-solid fa-message"></i><a href="rules.html">
+              <p class="menu__item-text">правила</p>
+            </a></li>
+          <li class="menu__item"><i class="fa-regular fa-circle-question"></i><a href="FAQ.html">
+              <p class="menu__item-text">FAQ</p>
+            </a></li>
+        </ul>
+      </section>
+    </section>
+
+
+    <section class="central">
+      <header class="header">
+
+        <div class="burger-menu__button" id="burger-menu__btn">
+          <img src="./src/img/personal-cabinet/burger.svg" alt="">
         </div>
-        <div class="text-2">
-          <p class="i">ReallyWorld не связан с MojangAB, Все средства идут на развитие проекта Коммерческая деятельность проекта соответствует политике Mojang AB.</p>
-          <a class="oferta" href="">Договор оферты</a>
+        <p class="logo-text logo-phones">lampix.net</p>
+        <div class="search-wrap">
+          <div class="search">
+            <input type="text" class="searchTerm" placeholder="&#128269 Search">
           </div>
         </div>
-      <div class="down">
-        <div class="down-content"> 
 
-          <ul class="footer-buttons">
-            <ul class="footer-social">
-              <li class="logo footer-logo"><a href=""><i class="fa-brands fa-telegram"></i></a></li>
-              <li class="logo footer-logo">   <a href=""><i class="fa-brands fa-vk"></i></a></li>
-              <li class="logo footer-logo"> <a href=""><i class="fa-brands fa-discord"></i></a></li>
-            </ul>
-
-            <ul class="footer-buttons fb2">
-            <li class="footer-buttons__item"><a href=""><p>Главная</p></a></li>
-            <li class="footer-buttons__item"><a href=""><p>Форум</p></a></li>
-            <li class="footer-buttons__item footer-buttons__item-active"><a href=""><p>Магазин</p></a></li>
-            <li class="footer-buttons__item"><a href=""><p>Правила</p></a></li>
-            <li class="footer-buttons__item"><a href=""><p>FAQ</p></a></li>
-          </ul>
-          </ul>
-
+        <div class="online">
+          <div class="online-switch">
+            <p class="online-text">Online</p>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="switch-slider round"></span>
+            </label>
+          </div>
+          <p class="online-count">200<span>/1000</span></p>
         </div>
+
+        <ul class="header__account">
+          <li class="account__img"><img class="" src="src/img/personal-cabinet/avatar.jpg"
+              alt="http://dummyimage.com/56/a6a6ff"></li>
+          <li class=" account__name">
+            <p class="account__name">Dante</p>
+          </li>
+          <li class="account__coins">
+            <p class="account__coins">666 coins</p>
+          </li>
+        </ul>
+
+        <ul class="header__logos">
+          <li class="logo header-logo telegram-logo"><a href=""><i class="fa-brands fa-telegram"></i></a></li>
+          <li class="logo header-logo vk-logo"> <a href=""><i class="fa-brands fa-vk"></i></a></li>
+          <li class="logo header-logo discord-logo"> <a href=""><i class="fa-brands fa-discord"></i></a></li>
+        </ul>
+      </header>
+      <div class="personal-page">
+
+        <div class="top">
+          <p class="p-text">Личный Кабинет</p>
+        </div>
+        <div class="cards">
+          <div class="pp about-user">
+
+            <div class="pp-wrapper">
+              <p class="info">Информация о пользователе
+              <p>
+              <ul class="info-text">
+                <li class="info-text__item">
+                  <p>Ваша Привелегия</p>
+                  <p class="info-text__item-priveledge">Titan</p>
+                </li>
+                <li class="info-text__item">
+                  <p>Ваш Баланс</p>
+                  <p><span class="coin-count">1000</span> coins</p>
+                </li>
+                <li class="info-text__item">
+                  <p>Имя Пользователя</p>
+                  <p>Evil_Lord</p>
+                </li>
+              </ul>
+              <button class="btn exit-btn">Выйти</button>
+            </div>
+
+          </div>
+          <div class="pp double-auth">
+            <p class="info">2-х этапная аутентификация
+            <p>
+              <button class="btn double-auth__btn">Включить</button>
+          </div>
+          <div class="pp coin-buy">
+            <div class="pp-wrapper">
+              <p class="coin-buy__info">Покупка коинов
+              <p>
+              <p class="subinfo">Получите</p>
+              <div class="coin-buy__count">1400 coins</div>
+              <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+              </div>
+              <input class="promo" type="text" name class="promo-p" placeholder="(Промокод, если есть)"></input>
+
+              <div class="bottom-container">
+                <button class="btn buy-btn">Купить</button>
+                <div class="price">
+                  <p>Стоимость <span class="price-count">1000₽</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pp skins">
+
+
+            <div class="skin">
+              <img src="src/img/cards/skin.png" alt="">
+            </div>
+            <div class="skin-bg">
+              <div class="skin-wrap">
+                <p class="skin-header">Скин</p>
+                <p class="skin-paragraph">Вы можете загрузить любой свой скин</p>
+                <div class="skins__btn-wrapper">
+                  <form enctype="multipart/form-data" method="post">
+                    <input name="skins__btn" type="file" id="skin__file" class="field" accept="image/.png" multiple>
+                    <label class="skin__btn-wrapper" for="skin__file">
+                      <div class="skins__btn">Загрузить</div>
+                    </label>
+                  </form>
+                </div>
+              </div>
+
+
+              <!-- <img src="src/img/cards/skin-bg.png" alt="http://dummyimage.com/220/a6a6ff" > -->
+            </div>
+          </div>
+        </div>
+
       </div>
-    </footer>
+
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="upper">
+
+      <div class="logo-wrap">
+        <div class="site-logo">
+          <img src="./src/img/footer/LP.jpg" alt="">
+        </div>
+        <p class="logo-text">lampix.net</p>
+      </div>
+
+      <ul class="upper-buttons">
+        <li class="logo footer-logo"><a href=""><i class="fa-brands fa-telegram"></i></a></li>
+        <li class="logo footer-logo"> <a href=""><i class="fa-brands fa-vk"></i></a></li>
+        <li class="logo footer-logo"> <a href=""><i class="fa-brands fa-discord"></i></a></li>
+      </ul>
+
+      <div class="text-1">
+        <p class="copyright">© 2022 Lampix Все права защищены.</p>
+        <p class="inn">ИП Капорцева Валентина Александровна ИНН: 771506816381 ОГРНИП: 321774600478221</p>
+      </div>
+      <div class="text-2">
+        <p class="i">ReallyWorld не связан с MojangAB, Все средства идут на развитие проекта Коммерческая деятельность
+          проекта соответствует политике Mojang AB.</p>
+        <a class="oferta" href="">Договор оферты</a>
+      </div>
+    </div>
+    <div class="down">
+      <div class="down-content">
+
+        <ul class="footer-buttons">
+          <ul class="footer-social">
+            <li class="logo footer-logo"><a href=""><i class="fa-brands fa-telegram"></i></a></li>
+            <li class="logo footer-logo"> <a href=""><i class="fa-brands fa-vk"></i></a></li>
+            <li class="logo footer-logo"> <a href=""><i class="fa-brands fa-discord"></i></a></li>
+          </ul>
+
+          <ul class="footer-buttons fb2">
+            <li class="footer-buttons__item"><a href="">
+                <p>Главная</p>
+              </a></li>
+            <li class="footer-buttons__item"><a href="">
+                <p>Форум</p>
+              </a></li>
+            <li class="footer-buttons__item footer-buttons__item-active"><a href="">
+                <p>Магазин</p>
+              </a></li>
+            <li class="footer-buttons__item"><a href="">
+                <p>Правила</p>
+              </a></li>
+            <li class="footer-buttons__item"><a href="">
+                <p>FAQ</p>
+              </a></li>
+          </ul>
+        </ul>
+
+      </div>
+    </div>
+  </footer>
 
 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
-    <script src="https://kit.fontawesome.com/48c939ed2f.js" crossorigin="anonymous"></script>
-    <script src='script.js'></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+  <script src="https://kit.fontawesome.com/48c939ed2f.js" crossorigin="anonymous"></script>
+  <script src='script.js'></script>
+</body>

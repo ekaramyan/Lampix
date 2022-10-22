@@ -1014,7 +1014,7 @@ input:checked + .switch-slider:before {
 }
 @media screen and (max-width: 660px) {
   .container {
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
   }
   .searchTerm {
@@ -1155,14 +1155,15 @@ input:checked + .switch-slider:before {
     max-height: -webkit-max-content;
     max-height: -moz-max-content;
     max-height: max-content;
-    padding: 0%;
+    width: 100%;
+    padding: 1% 2%;
   }
   .discount-date {
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
   }
-  .discount-info {
+  .discount-size p {
     font-weight: 700;
     font-size: 18px;
     line-height: 107.9%;
@@ -1498,7 +1499,7 @@ input:checked + .switch-slider:before {
 }
 @media screen and (max-width: 660px) {
   .container {
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
   }
   .searchTerm {
@@ -1639,14 +1640,15 @@ input:checked + .switch-slider:before {
     max-height: -webkit-max-content;
     max-height: -moz-max-content;
     max-height: max-content;
-    padding: 0%;
+    width: 100%;
+    padding: 1% 2%;
   }
   .discount-date {
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
   }
-  .discount-info {
+  .discount-size p {
     font-weight: 700;
     font-size: 18px;
     line-height: 107.9%;
@@ -2040,7 +2042,7 @@ input:checked + .switch-slider:before {
 }
 @media screen and (max-width: 660px) {
   .container {
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
   }
   .searchTerm {
@@ -2181,14 +2183,15 @@ input:checked + .switch-slider:before {
     max-height: -webkit-max-content;
     max-height: -moz-max-content;
     max-height: max-content;
-    padding: 0%;
+    width: 100%;
+    padding: 1% 2%;
   }
   .discount-date {
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
   }
-  .discount-info {
+  .discount-size p {
     font-weight: 700;
     font-size: 18px;
     line-height: 107.9%;
@@ -2452,7 +2455,7 @@ body {
 }
 @media screen and (max-width: 660px) {
   .container {
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
   }
   .searchTerm {
@@ -2593,14 +2596,15 @@ body {
     max-height: -webkit-max-content;
     max-height: -moz-max-content;
     max-height: max-content;
-    padding: 0%;
+    width: 100%;
+    padding: 1% 2%;
   }
   .discount-date {
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
   }
-  .discount-info {
+  .discount-size p {
     font-weight: 700;
     font-size: 18px;
     line-height: 107.9%;

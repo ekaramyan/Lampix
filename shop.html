@@ -1,188 +1,314 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-    />
-    <link rel="shortcut icon" href="../src/img/icon/icon.svg" type="image/x-icon">
-    <link rel='stylesheet' type='text/css' media='screen' href='null.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
-    
-    <meta name="viewport" content="width=device-width">
-    <title>Lampix Server</title>
-  </head>
-  <body>
-<div class="container">
-<section>
-  <div class="burger-menu">
-     <div class="burger-menu__content">
 
-            <div class="online menu-online">
-              <div class="burger-menu__button menu-close"> <i><i class="fa-solid fa-xmark"></i></i></div>
-              <div class="online-switch">
-                <p class="online-text menu-online-text">Online</p>
-                <label class="switch">
-                  <input type="checkbox">
-                  <span class="switch-slider round"></span>
-                </label>
-              </div>
-              <p class=" online-count">200<span>/1000</span></p>  
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="../src/img/icon/icon.svg" type="image/x-icon">
+  <link rel='stylesheet' type='text/css' media='screen' href='null.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+
+  <meta name="viewport" content="width=device-width">
+  <title>Lampix Server</title>
+</head>
+
+<body>
+  <div class="container">
+    <section>
+      <div class="burger-menu">
+        <div class="burger-menu__content">
+
+          <div class="online menu-online">
+            <div class="burger-menu__button menu-close"> <i><i class="fa-solid fa-xmark"></i></i></div>
+            <div class="online-switch">
+              <p class="online-text menu-online-text">Online</p>
+              <label class="switch">
+                <input type="checkbox">
+                <span class="switch-slider round"></span>
+              </label>
             </div>
-
-      <ul class="menu">
-        
-        <li class="menu__item"><i class="fa-sharp fa-solid fa-house"></i><a href="main.html"><p class="menu__item-text">главная</p></a></li>
-        <li class="menu__item"><i class="fa-solid fa-window-maximize"></i><a href="forum.html"><p class="menu__item-text">форум</p></a></li>
-        <li class="menu__item"><i class="fa-sharp fa-solid fa-credit-card"></i><a href="shop.html"><p class="menu__item-text">магазин</p></a></li>
-        <li class="menu__item"><i class="fa-solid fa-message"></i><a href="rules.html"><p class="menu__item-text">правила</p></a></li>
-        <li class="menu__item"><i class="fa-regular fa-circle-question"></i><a href="FAQ.html"><p class="menu__item-text">FAQ</p></a></li>
-      </ul>
-    </div>
-  </div>
-
-
-    <section class="sidebar">
-      <p class="sidebar__header">lampix.net</p>
-    
-      <ul class="account">
-          <li class="account__img"><img class="" src="src/img/personal-cabinet/avatar.jpg" alt="http://dummyimage.com/56/a6a6ff"></li>
-          <li class="account__name"><p class="account__name">Dante</p></li>
-          <li class="account__coins"><p class="account__coins">666 coins</p></li>
-      </ul>
-    
-      <ul class="menu">
-        <li class="menu__item"><i class="fa-sharp fa-solid fa-house"></i><a href="main.html"><p class="menu__item-text">главная</p></a></li>
-        <li class="menu__item"><i class="fa-solid fa-window-maximize"></i><a href="forum.html"><p class="menu__item-text">форум</p></a></li>
-        <li class="menu__item"><i class="fa-sharp fa-solid fa-credit-card"></i><a href="shop.html"><p class="menu__item-text">магазин</p></a></li>
-        <li class="menu__item"><i class="fa-solid fa-message"></i><a href="rules.html"><p class="menu__item-text">правила</p></a></li>
-        <li class="menu__item"><i class="fa-regular fa-circle-question"></i><a href="FAQ.html"><p class="menu__item-text">FAQ</p></a></li>
-      </ul>
-    </section>
-</section>
-
-
-<section class="central">
-  <header class="header">
-
-      <div class="burger-menu__button" id="burger-menu__btn">
-        <img src="./src/img/personal-cabinet/burger.svg" alt="">
-      </div>
-      <p class="logo-text logo-phones">lampix.net</p>
-         <div class="search-wrap">  
-           <div class="search">
-            <input type="text" class="searchTerm" placeholder="&#128269 Search">
-            </div>
+            <p class=" online-count">200<span>/1000</span></p>
           </div>
 
-            <div class="online">
-              <div class="online-switch">
-                <p class="online-text">Online</p>
-                <label class="switch">
-                  <input type="checkbox">
-                  <span class="switch-slider round"></span>
-                </label>
-              </div>
-              <p class="online-count">200<span>/1000</span></p>  
-            </div>
+          <ul class="menu">
 
-            <ul class="header__account">
-              <li class="account__img"><img class="" src="src/img/personal-cabinet/avatar.jpg" alt="http://dummyimage.com/56/a6a6ff""></li>
-              <li class="account__name"><p class="account__name">Dante</p></li>
-              <li class="account__coins"><p class="account__coins">666 coins</p></li>
+            <li class="menu__item"><i class="fa-sharp fa-solid fa-house"></i><a href="main.html">
+                <p class="menu__item-text">главная</p>
+              </a></li>
+            <li class="menu__item"><i class="fa-solid fa-window-maximize"></i><a href="forum.html">
+                <p class="menu__item-text">форум</p>
+              </a></li>
+            <li class="menu__item"><i class="fa-sharp fa-solid fa-credit-card"></i><a href="shop.html">
+                <p class="menu__item-text">магазин</p>
+              </a></li>
+            <li class="menu__item"><i class="fa-solid fa-message"></i><a href="rules.html">
+                <p class="menu__item-text">правила</p>
+              </a></li>
+            <li class="menu__item"><i class="fa-regular fa-circle-question"></i><a href="FAQ.html">
+                <p class="menu__item-text">FAQ</p>
+              </a></li>
           </ul>
+        </div>
+      </div>
 
-            <ul class="header__logos">
-              <li class="logo header-logo telegram-logo"><a href=""><i class="fa-brands fa-telegram"></i></a></li>
-              <li class="logo header-logo vk-logo">   <a href=""><i class="fa-brands fa-vk"></i></a></li>
-              <li class="logo header-logo discord-logo"> <a href=""><i class="fa-brands fa-discord"></i></a></li>
-            </ul>
-</header>
-<section class="central">
-          <div class="top">
-            <p class="p-text">Магазин</p>
-            <ul class="shop-menu">
-              <li><a href=""><p>Кейсы</p></a></li>
-              <li><a href=""><p>Привелегии</p></a></li>
-              <li><a href=""><p>Разное</p></a></li>
-              <li><a href=""><p>Валюта</p></a></li>
-              <li><a href=""><p>Разбан</p></a></li>
-            </ul>
+
+      <section class="sidebar">
+        <p class="sidebar__header">lampix.net</p>
+
+        <ul class="account">
+          <a href="index.html">
+            <li class="account__img"><img class="" src="src/img/personal-cabinet/avatar.jpg"
+                alt="http://dummyimage.com/56/a6a6ff"></li>
+          </a>
+          <li class="account__name">
+            <p class="account__name">Dante</p>
+          </li>
+          <li class="account__coins">
+            <p class="account__coins">666 coins</p>
+          </li>
+        </ul>
+
+        <ul class="menu">
+          <li class="menu__item"><i class="fa-sharp fa-solid fa-house"></i><a href="main.html">
+              <p class="menu__item-text">главная</p>
+            </a></li>
+          <li class="menu__item"><i class="fa-solid fa-window-maximize"></i><a href="forum.html">
+              <p class="menu__item-text">форум</p>
+            </a></li>
+          <li class="menu__item"><i class="fa-sharp fa-solid fa-credit-card"></i><a href="shop.html">
+              <p class="menu__item-text">магазин</p>
+            </a></li>
+          <li class="menu__item"><i class="fa-solid fa-message"></i><a href="rules.html">
+              <p class="menu__item-text">правила</p>
+            </a></li>
+          <li class="menu__item"><i class="fa-regular fa-circle-question"></i><a href="FAQ.html">
+              <p class="menu__item-text">FAQ</p>
+            </a></li>
+        </ul>
+      </section>
+    </section>
+
+
+    <section class="central">
+      <header class="header">
+
+        <div class="burger-menu__button" id="burger-menu__btn">
+          <img src="./src/img/personal-cabinet/burger.svg" alt="">
+        </div>
+        <p class="logo-text logo-phones">lampix.net</p>
+        <div class="search-wrap">
+          <div class="search">
+            <input type="text" class="searchTerm" placeholder="&#128269 Search">
           </div>
+        </div>
+
+        <div class="online">
+          <div class="online-switch">
+            <p class="online-text">Online</p>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="switch-slider round"></span>
+            </label>
+          </div>
+          <p class="online-count">200<span>/1000</span></p>
+        </div>
+
+        <ul class="header__account">
+          <a href="index.html">
+            <li class="account__img"><img class="" src="src/img/personal-cabinet/avatar.jpg"
+                alt="http://dummyimage.com/56/a6a6ff"></li>
+          </a>
+          <li class="account__name">
+            <p class="account__name">Dante</p>
+          </li>
+          <li class="account__coins">
+            <p class="account__coins">666 coins</p>
+          </li>
+        </ul>
+
+        <ul class="header__logos">
+          <li class="logo header-logo telegram-logo"><a href=""><i class="fa-brands fa-telegram"></i></a></li>
+          <li class="logo header-logo vk-logo"> <a href=""><i class="fa-brands fa-vk"></i></a></li>
+          <li class="logo header-logo discord-logo"> <a href=""><i class="fa-brands fa-discord"></i></a></li>
+        </ul>
+      </header>
+      <section class="central">
+        <div class="top">
+          <p class="p-text">Магазин</p>
+          <ul class="shop-menu">
+            <li><a href="">
+                <p>Кейсы</p>
+              </a></li>
+            <li><a href="">
+                <p>Привелегии</p>
+              </a></li>
+            <li><a href="">
+                <p>Разное</p>
+              </a></li>
+            <li><a href="">
+                <p>Валюта</p>
+              </a></li>
+            <li><a href="">
+                <p>Разбан</p>
+              </a></li>
+          </ul>
+        </div>
 
 
         <div class="shop">
-              <ul class="shop-cards">
-                <li class="card"><div class="image"><img src="src/img/shop/phantom1.png" alt=""></div><div class="card-text"><p class="card-text-name">Название</p><p class="card-text-skin-name">Phantom</p></div><div class="card-text-price"><p>Купить за <span>1000</span></p></div></li>
-                <li class="card"><div class="image"><img src="src/img/shop/phantom2.png" alt=""></div><div class="card-text"><p class="card-text-name">Название</p><p class="card-text-skin-name">Phantom</p></div><div class="card-text-price"><p>Купить за <span>1000</span></p></div></li>
-                <li class="card"><div class="image"><img src="src/img/shop/phantom3.png" alt=""></div><div class="card-text"><p class="card-text-name">Название</p><p class="card-text-skin-name">Phantom</p></div><div class="card-text-price"><p>Купить за <span>1000</span></p></div></li>
-                <li class="card"><div class="image"><img src="src/img/shop/phantom4.png" alt=""></div><div class="card-text"><p class="card-text-name">Название</p><p class="card-text-skin-name">Phantom</p></div><div class="card-text-price"><p>Купить за <span>1000</span></p></div></li>
-                <li class="card"><div class="image"><img src="src/img/shop/phantom3.png" alt=""></div><div class="card-text"><p class="card-text-name">Название</p><p class="card-text-skin-name">Phantom</p></div><div class="card-text-price"><p>Купить за <span>1000</span></p></div></li>
-                <li class="card"><div class="image"><img src="src/img/shop/phantom4.png" alt=""></div><div class="card-text"><p class="card-text-name">Название</p><p class="card-text-skin-name">Phantom</p></div><div class="card-text-price"><p>Купить за <span>1000</span></p></div></li>
-                <li class="card"><div class="image"><img src="src/img/shop/phantom1.png" alt=""></div><div class="card-text"><p class="card-text-name">Название</p><p class="card-text-skin-name">Phantom</p></div><div class="card-text-price"><p>Купить за <span>1000</span></p></div></li>
-                <li class="card"><div class="image"><img src="src/img/shop/phantom2.png" alt=""></div><div class="card-text"><p class="card-text-name">Название</p><p class="card-text-skin-name">Phantom</p></div><div class="card-text-price"><p>Купить за <span>1000</span></p></div></li>
-              </ul>
-            </div>
-          </div>
+          <ul class="shop-cards">
+            <li class="card">
+              <div class="image"><img src="src/img/shop/phantom1.png" alt=""></div>
+              <div class="card-text">
+                <p class="card-text-name">Название</p>
+                <p class="card-text-skin-name">Phantom</p>
+              </div>
+              <div class="card-text-price">
+                <p>Купить за <span>1000</span></p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="image"><img src="src/img/shop/phantom2.png" alt=""></div>
+              <div class="card-text">
+                <p class="card-text-name">Название</p>
+                <p class="card-text-skin-name">Phantom</p>
+              </div>
+              <div class="card-text-price">
+                <p>Купить за <span>1000</span></p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="image"><img src="src/img/shop/phantom3.png" alt=""></div>
+              <div class="card-text">
+                <p class="card-text-name">Название</p>
+                <p class="card-text-skin-name">Phantom</p>
+              </div>
+              <div class="card-text-price">
+                <p>Купить за <span>1000</span></p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="image"><img src="src/img/shop/phantom4.png" alt=""></div>
+              <div class="card-text">
+                <p class="card-text-name">Название</p>
+                <p class="card-text-skin-name">Phantom</p>
+              </div>
+              <div class="card-text-price">
+                <p>Купить за <span>1000</span></p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="image"><img src="src/img/shop/phantom3.png" alt=""></div>
+              <div class="card-text">
+                <p class="card-text-name">Название</p>
+                <p class="card-text-skin-name">Phantom</p>
+              </div>
+              <div class="card-text-price">
+                <p>Купить за <span>1000</span></p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="image"><img src="src/img/shop/phantom4.png" alt=""></div>
+              <div class="card-text">
+                <p class="card-text-name">Название</p>
+                <p class="card-text-skin-name">Phantom</p>
+              </div>
+              <div class="card-text-price">
+                <p>Купить за <span>1000</span></p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="image"><img src="src/img/shop/phantom1.png" alt=""></div>
+              <div class="card-text">
+                <p class="card-text-name">Название</p>
+                <p class="card-text-skin-name">Phantom</p>
+              </div>
+              <div class="card-text-price">
+                <p>Купить за <span>1000</span></p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="image"><img src="src/img/shop/phantom2.png" alt=""></div>
+              <div class="card-text">
+                <p class="card-text-name">Название</p>
+                <p class="card-text-skin-name">Phantom</p>
+              </div>
+              <div class="card-text-price">
+                <p>Купить за <span>1000</span></p>
+              </div>
+            </li>
+          </ul>
         </div>
+  </div>
+  </div>
+  </div>
+
+  </section>
+  </div>
+
+  <footer class="footer">
+    <div class="upper">
+
+      <div class="logo-wrap">
+        <div class="site-logo">
+          <img src="./src/img/footer/LP.jpg" alt="">
         </div>
+        <p class="logo-text">lampix.net</p>
+      </div>
 
-      </section>
-</div>
+      <ul class="upper-buttons">
+        <li class="logo footer-logo"><a href=""><i class="fa-brands fa-telegram"></i></a></li>
+        <li class="logo footer-logo"> <a href=""><i class="fa-brands fa-vk"></i></a></li>
+        <li class="logo footer-logo"> <a href=""><i class="fa-brands fa-discord"></i></a></li>
+      </ul>
 
-    <footer class="footer">
-      <div class="upper">
+      <div class="text-1">
+        <p class="copyright">© 2022 Lampix Все права защищены.</p>
+        <p class="inn">ИП Капорцева Валентина Александровна ИНН: 771506816381 ОГРНИП: 321774600478221</p>
+      </div>
+      <div class="text-2">
+        <p class="i">ReallyWorld не связан с MojangAB, Все средства идут на развитие проекта Коммерческая деятельность
+          проекта соответствует политике Mojang AB.</p>
+        <a class="oferta" href="">Договор оферты</a>
+      </div>
+    </div>
+    <div class="down">
+      <div class="down-content">
 
-        <div class="logo-wrap">
-          <div class="site-logo">
-            <img src="./src/img/footer/LP.jpg" alt="">
-          </div>
-          <p class="logo-text">lampix.net</p>
-        </div>
+        <ul class="footer-buttons">
+          <ul class="footer-social">
+            <li class="logo footer-logo"><a href=""><i class="fa-brands fa-telegram"></i></a></li>
+            <li class="logo footer-logo"> <a href=""><i class="fa-brands fa-vk"></i></a></li>
+            <li class="logo footer-logo"> <a href=""><i class="fa-brands fa-discord"></i></a></li>
+          </ul>
 
-        <ul class="upper-buttons">
-          <li class="logo footer-logo"><a href=""><i class="fa-brands fa-telegram"></i></a></li>
-          <li class="logo footer-logo">   <a href=""><i class="fa-brands fa-vk"></i></a></li>
-          <li class="logo footer-logo"> <a href=""><i class="fa-brands fa-discord"></i></a></li>
+          <ul class="footer-buttons fb2">
+            <li class="footer-buttons__item"><a href="">
+                <p>Главная</p>
+              </a></li>
+            <li class="footer-buttons__item"><a href="">
+                <p>Форум</p>
+              </a></li>
+            <li class="footer-buttons__item footer-buttons__item-active"><a href="">
+                <p>Магазин</p>
+              </a></li>
+            <li class="footer-buttons__item"><a href="">
+                <p>Правила</p>
+              </a></li>
+            <li class="footer-buttons__item"><a href="">
+                <p>FAQ</p>
+              </a></li>
+          </ul>
         </ul>
 
-        <div class="text-1">
-          <p class="copyright">© 2022 Lampix Все права защищены.</p>
-          <p class="inn">ИП Капорцева Валентина Александровна ИНН: 771506816381 ОГРНИП: 321774600478221</p>
-        </div>
-        <div class="text-2">
-          <p class="i">ReallyWorld не связан с MojangAB, Все средства идут на развитие проекта Коммерческая деятельность проекта соответствует политике Mojang AB.</p>
-          <a class="oferta" href="">Договор оферты</a>
-          </div>
-        </div>
-      <div class="down">
-        <div class="down-content"> 
-
-          <ul class="footer-buttons">
-            <ul class="footer-social">
-              <li class="logo footer-logo"><a href=""><i class="fa-brands fa-telegram"></i></a></li>
-              <li class="logo footer-logo">   <a href=""><i class="fa-brands fa-vk"></i></a></li>
-              <li class="logo footer-logo"> <a href=""><i class="fa-brands fa-discord"></i></a></li>
-            </ul>
-
-            <ul class="footer-buttons fb2">
-            <li class="footer-buttons__item"><a href=""><p>Главная</p></a></li>
-            <li class="footer-buttons__item"><a href=""><p>Форум</p></a></li>
-            <li class="footer-buttons__item footer-buttons__item-active"><a href=""><p>Магазин</p></a></li>
-            <li class="footer-buttons__item"><a href=""><p>Правила</p></a></li>
-            <li class="footer-buttons__item"><a href=""><p>FAQ</p></a></li>
-          </ul>
-          </ul>
-
-        </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
-    <script src="https://kit.fontawesome.com/48c939ed2f.js" crossorigin="anonymous"></script>
-    <script src='script.js'></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+  <script src="https://kit.fontawesome.com/48c939ed2f.js" crossorigin="anonymous"></script>
+  <script src='script.js'></script>
+</body>
