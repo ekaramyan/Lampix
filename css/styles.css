@@ -1038,6 +1038,9 @@ input:checked + .switch-slider:before {
   border-radius: 0 0 10px 10px;
   justify-self: end;
 }
+.update-btn:hover {
+  background: #e6e0cf;
+}
 .update-date {
   font-weight: 700;
   font-size: 1.563rem;
@@ -1129,6 +1132,9 @@ input:checked + .switch-slider:before {
   background: #F09000;
   width: fit-content;
   padding: 0% 1%;
+}
+.shop-btn:hover {
+  background: #f0b55d;
 }
 
 body {

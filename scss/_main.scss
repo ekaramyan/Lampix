@@ -76,6 +76,9 @@
         background: #242119;
         border-radius: 0 0 10px 10px;
         justify-self: end;
+        &:hover{
+            background: #e6e0cf;
+        }
     }
     &-date
     {
@@ -185,4 +188,7 @@ color: #00000080;
     background: #F09000;
     width: fit-content;
     padding: 0% 1%;
+    &:hover{
+        background: #f0b55d;
+    }
 }
