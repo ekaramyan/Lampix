@@ -1137,6 +1137,54 @@ input:checked + .switch-slider:before {
   background: #f0b55d;
 }
 
+.forum {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #FEFEFE;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 3% 5%;
+}
+.forum__header {
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+}
+.forum__subheader {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(7, 7, 7, 0.368627451);
+}
+.forum__text {
+  border: 2px solid #D7D7D7;
+  backdrop-filter: blur(2.5px);
+  border-radius: 11px;
+}
+.forum__btn {
+  background: #F09000;
+  width: max-content;
+  height: max-content;
+  padding: 1%;
+}
+.forum__btn:hover {
+  background: #bb7205;
+  color: #dfdfdf;
+}
+
+.text-areas {
+  display: block;
+  width: 100%;
+  border-radius: 11px;
+  padding: 1%;
+}
+.text-areas:focus {
+  border: 2px solid #F09000;
+  backdrop-filter: blur(2.5px);
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }

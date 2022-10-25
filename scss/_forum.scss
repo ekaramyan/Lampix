@@ -1,0 +1,62 @@
+.forum
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #FEFEFE;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 3% 5%;
+    &__header
+    {
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+    }
+    &__subheader
+    {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #0707075e;
+    }
+    &__name
+    {
+        
+    }
+    &__tags
+    {
+        
+    }
+    &__text
+    {
+        border: 2px solid #D7D7D7;
+        backdrop-filter: blur(2.5px);
+        border-radius: 11px;
+    }
+    &__btn
+    {
+        background: #F09000;
+        width: max-content;
+        height: max-content;
+        padding: 1%;
+        &:hover
+        {
+            background: #bb7205;
+            color: #dfdfdf;
+        }
+    }
+}
+.text-areas
+{
+    display: block;
+    width: 100%;
+    border-radius: 11px;
+    padding: 1%;
+    &:focus
+    {
+        border: 2px solid #F09000;
+        backdrop-filter: blur(2.5px);
+    }
+}

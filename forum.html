@@ -139,7 +139,16 @@
         <div class="forum">
           <p class="forum__header">Заголовок</p>
           <p class="forum__subheader subheader">Сформулируйте в нескольких словах о чём ваша тема</p>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <form action="">
+            <input type="text" class="forum__name text-areas" name="" id="">
+          </form>
+          <textarea name="" id="" cols="30" rows="10" class="forum__text"></textarea>
+          <p class="forum__header">Теги</p>
+          <p class="forum__subheader subheader">Несколько тегов могут быть разделяны запятыми</p>
+          <form action="">
+            <input type="text" class="forum__tags text-areas" name="" id="">
+          </form>
+          <button class="forum__btn btn">Создать тему</button>
         </div>
 
       </section>
