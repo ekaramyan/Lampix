@@ -1,26 +1,37 @@
+// $(document).ready(function () {
+//     $('.burger-menu__button').click(function (event) {
+//         $('.burger-menu, .menu, .burger-menu__button-container .burger-menu__content').toggleClass('active');
+//     });
+
 $(document).ready(function () {
-    $('.burger-menu__button').click(function (event) {
-        $('.burger-menu, .menu, .burger-menu__button-container .burger-menu__content').toggleClass('active');
-
-
+    $('.search-wrap').click(function (event) {
+        $('.searchTerm').toggleClass('active');
     });
+});
+// });
 
-    $(document).ready(function () {
-        $('.search-wrap').click(function (event) {
-            $('.searchTerm').toggleClass('active');
-        });
-    });
+const menu_btn = document.getElementById('burger-menu__btn');
+if (menu_btn)
+{
+const menu_button = document.querySelector('.burger-menu__btn');
+const burger_menu = document.querySelector('.burger-menu', '.menu');
+const burger_menu_content = document.querySelector('.menu');
+
+menu_btn.addEventListener('click', function(e){
+    // menu_button.classList.toggle('active');
+    burger_menu.classList.toggle('active');
+    burger_menu_content.classList.toggle('active');
 });
 
 
-function AddClass() {
-    document.querySelector('.burger-menu__button').click
-    var element = document.getElementById("burger-menu, menu");
-    element.classList.add("active");
-  }
+}
 
-var acc = document.getElementsByClassName("accordion");
-var i;
+
+
+
+
+let acc = document.getElementsByClassName("accordion");
+let i;
 
 for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function () {

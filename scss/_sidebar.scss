@@ -23,7 +23,7 @@
         height: 80%;
         background: radial-gradient(159.06% 81.68% at 74.64% -9.86%, #322620 0%, #222222 100%);
         box-shadow: 7px 0px 60px rgba(0, 0, 0, 0.05);
-        border-radius: 5px;
+        border-radius: 0 5px 5px 0;
     }
 
     &__button
@@ -93,7 +93,7 @@
     width: 100%;
     background: radial-gradient(159.06% 81.68% at 74.64% -9.86%, #322620 0%, #222222 100%);
     box-shadow: 7px 0px 60px rgba(0, 0, 0, 0.05);
-    border-radius: 5px;
+    border-radius: 0 5px 5px 0;
 
 
     &__header

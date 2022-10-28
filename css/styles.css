@@ -196,7 +196,7 @@ input:checked + .switch-slider:before {
   height: 80%;
   background: radial-gradient(159.06% 81.68% at 74.64% -9.86%, #322620 0%, #222222 100%);
   box-shadow: 7px 0px 60px rgba(0, 0, 0, 0.05);
-  border-radius: 5px;
+  border-radius: 0 5px 5px 0;
 }
 .burger-menu__button {
   cursor: pointer;
@@ -250,7 +250,7 @@ input:checked + .switch-slider:before {
   width: 100%;
   background: radial-gradient(159.06% 81.68% at 74.64% -9.86%, #322620 0%, #222222 100%);
   box-shadow: 7px 0px 60px rgba(0, 0, 0, 0.05);
-  border-radius: 5px;
+  border-radius: 0 5px 5px 0;
 }
 .sidebar__header {
   color: #fff;
@@ -544,6 +544,7 @@ input:checked + .switch-slider:before {
   align-items: center;
   border-radius: 10px;
   border: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 3%;
 }
 
 .about-user {
@@ -558,7 +559,6 @@ input:checked + .switch-slider:before {
   text-align: center;
   font-weight: 900;
   font-size: 18px;
-  padding: 10px 0 0 0;
 }
 .info-text {
   display: flex;
@@ -778,6 +778,7 @@ input:checked + .switch-slider:before {
   /* height: max-content; */
   align-items: center;
   border: 0;
+  padding: 0;
 }
 
 .skin {
@@ -1342,6 +1343,7 @@ body {
   }
   .info {
     font-size: 16px;
+    padding: 0;
   }
   .info-text {
     font-size: 12px;
