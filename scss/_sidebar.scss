@@ -36,6 +36,8 @@
     display: none;
     width: max-content;
     align-self: center;
+    // width: 150%;
+    height: 120%;
     
     transition: .3s;
     &:hover
@@ -89,7 +91,7 @@
     top: 0;
     /* padding: 0 30%; */
     max-width: 700px;
-    height: 96vh;
+    height: 80vh;
     width: 100%;
     background: radial-gradient(159.06% 81.68% at 74.64% -9.86%, #322620 0%, #222222 100%);
     box-shadow: 7px 0px 60px rgba(0, 0, 0, 0.05);

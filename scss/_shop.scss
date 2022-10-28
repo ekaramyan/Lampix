@@ -23,6 +23,7 @@
         height: 30px;
         &:hover
         {
+            
             //display: inline;
             transform: translate(-3px, -6px);
             background: linear-gradient( 180deg, #f0900000 80%, #F09000, #FFCC80) no-repeat center bottom;
@@ -85,6 +86,7 @@
         }       
         &-price
         {
+            cursor: pointer;
         height: 100%;
         width: 100%;
         background: #242119;
