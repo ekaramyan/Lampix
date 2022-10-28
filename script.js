@@ -13,7 +13,11 @@ $(document).ready(function () {
 });
 
 
-
+function AddClass() {
+    document.querySelector('.burger-menu__button').click
+    var element = document.getElementById("burger-menu, menu");
+    element.classList.add("active");
+  }
 
 var acc = document.getElementsByClassName("accordion");
 var i;
