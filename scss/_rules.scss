@@ -1,0 +1,67 @@
+.accordion {
+    background-color: #FEFEFE;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.035em;
+    color: #323232;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 10px;
+    &-wrapper
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        padding: 10p 0px;
+    }
+
+    &-item
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+    &:hover
+    {
+        background-color: #FFD79A;
+    }
+    .active{
+        background-color: #FFD79A;
+    }
+
+    &:after {
+        content: '\02795'; /* Unicode character for "plus" sign (+) */
+        font-size: 13px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+    }
+    
+    &:after {
+        content: "\2796"; /* Unicode character for "minus" sign (-) */
+    }
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 10px 18px;
+    background-color:  #FEFEFE;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 10px 10px;
+    &:last-child
+    {
+        margin-bottom: 10px;
+    }
+}
