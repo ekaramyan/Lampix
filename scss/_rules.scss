@@ -44,8 +44,19 @@
     }
     
     &:after {
-        content: "\2796"; /* Unicode character for "minus" sign (-) */
+        content: "";
+        width: 12px;
+        height: 12px;
+        border:  solid #323232;
+        border-width: 1px 0 0 1px;
+        transform:  rotate(224deg);
+        //position: absolute; 
+        transition: .5s;
+        &:focus{
+            transform:  rotate(-224deg);
+        }  
     }
+
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */

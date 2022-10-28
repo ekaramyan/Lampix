@@ -154,6 +154,10 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 74px);
     place-items: center;
+    a{
+        display: block;
+        width: 100%;
+    }
 
 &__item
 {

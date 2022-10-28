@@ -305,6 +305,10 @@ input:checked + .switch-slider:before {
       height: 100%;
   } */
 }
+.menu a {
+  display: block;
+  width: 100%;
+}
 .menu__item {
   display: flex;
   align-items: center;
@@ -1230,7 +1234,16 @@ input:checked + .switch-slider:before {
   margin-left: 5px;
 }
 .accordion:after {
-  content: "➖"; /* Unicode character for "minus" sign (-) */
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: solid #323232;
+  border-width: 1px 0 0 1px;
+  transform: rotate(224deg);
+  transition: 0.5s;
+}
+.accordion:after:focus {
+  transform: rotate(-224deg);
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
