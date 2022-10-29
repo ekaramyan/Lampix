@@ -54,7 +54,10 @@
         transition: .5s;
         &:focus{
             transform:  rotate(-224deg);
-        }  
+        }
+        &clicked::after{
+            transform: rotate(-224deg);
+          }  
     }
 
 }

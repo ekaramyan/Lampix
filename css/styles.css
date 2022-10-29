@@ -308,6 +308,7 @@ input:checked + .switch-slider:before {
 .menu a {
   display: block;
   width: 100%;
+  height: 100%;
 }
 .menu__item {
   display: flex;
@@ -1243,6 +1244,9 @@ input:checked + .switch-slider:before {
   transition: 0.5s;
 }
 .accordion:after:focus {
+  transform: rotate(-224deg);
+}
+.accordion::afterclicked::after {
   transform: rotate(-224deg);
 }
 

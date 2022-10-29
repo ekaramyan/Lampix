@@ -80,3 +80,12 @@ for (i = 0; i < acc.length; i++) {
 //     var element = document.getElementById(".burger-menu__btn, .burger-menu__button");
 //     element.classList.toggle(".burger-menu.active", ".menu.active");
 //   }
+
+const item = document.querySelectorAll('accordion:after');
+      for (let x = item.length - 1; x >= 0; x--) {
+        item[x].onclick = function(){
+          this.classList.toggle('clicked');
+
+          console.log(item)
+        }
+      }
