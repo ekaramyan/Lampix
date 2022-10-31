@@ -1246,7 +1246,8 @@ input:checked + .switch-slider:before {
 .accordion:after:focus {
   transform: rotate(-224deg);
 }
-.accordion::afterclicked::after {
+
+.rotate {
   transform: rotate(-224deg);
 }
 

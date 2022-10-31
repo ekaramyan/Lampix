@@ -22,11 +22,11 @@ if (menu_btn) {
     });
     console.log(menu_btn)
 }
-const menuClose = document.getElementById( 'burger-menu__btn_close');
-if(menuClose){
+const menuClose = document.getElementById('burger-menu__btn_close');
+if (menuClose) {
     const burger_menu = document.getElementById('burger-menu');
     const burger_menu_content = document.getElementById('menu');
-    menuClose.addEventListener('click', function(e){
+    menuClose.addEventListener('click', function (e) {
         burger_menu.classList.remove('active');
         burger_menu_content.classList.remove('active');
     });
@@ -54,7 +54,7 @@ for (i = 0; i < acc.length; i++) {
         /* Toggle between adding and removing the "active" class,
         to highlight the button that controls the panel */
         this.classList.toggle("active");
-        
+
         /* Toggle between hiding and showing the active panel */
         var panel = this.nextElementSibling;
         if (panel.style.display === "block") {
@@ -81,11 +81,17 @@ for (i = 0; i < acc.length; i++) {
 //     element.classList.toggle(".burger-menu.active", ".menu.active");
 //   }
 
-const item = document.querySelectorAll('accordion:after');
-      for (let x = item.length - 1; x >= 0; x--) {
-        item[x].onclick = function(){
-          this.classList.toggle('clicked');
 
-          console.log(item)
-        }
-      }
+// accordion:after.onclick = function(){
+//     this.classList.toggle('rotate')
+//   }
+
+function fun1() {
+    const rng = document.getElementById('myRange'); //rng - это ползунок
+    const i1 = document.getElementById('range_count'); // i1 - input
+    rng.oninput
+    {
+    document.write(i1); 
+    i1.value = rng.value;
+    }
+}
