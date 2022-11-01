@@ -86,12 +86,10 @@ for (i = 0; i < acc.length; i++) {
 //     this.classList.toggle('rotate')
 //   }
 
-function fun1() {
-    const rng = document.getElementById('myRange'); //rng - это ползунок
-    const i1 = document.getElementById('range_count'); // i1 - input
-    rng.oninput
-    {
-    document.write(i1); 
-    i1.value = rng.value;
+
+    let rng = document.getElementById('myRange'); //rng - это ползунок
+    let out = document.getElementById('range_count'); // i1 - input
+    out.innerHTML = rng.value;
+    rng.oninput = function () {
+        out.innerHTML = parseInt(this.value*100);
     }
-}
