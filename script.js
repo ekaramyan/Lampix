@@ -87,9 +87,12 @@ for (i = 0; i < acc.length; i++) {
 //   }
 
 
-    let rng = document.getElementById('myRange'); //rng - это ползунок
-    let out = document.getElementById('range_count'); // i1 - input
-    out.innerHTML = rng.value;
-    rng.oninput = function () {
-        out.innerHTML = parseInt(this.value*100);
-    }
+let rng = document.getElementById('myRange'); //rng - это ползунок
+let out = document.getElementById('range_count'); // i1 - input
+let coins = document.getElementById('range_coins');
+out.innerHTML = rng.value;
+coins.innerHTML = rng.value;
+rng.oninput = function () {
+    out.innerHTML = parseInt(this.value * 10);
+    coins.innerHTML = parseInt(this.value * 14);
+}
