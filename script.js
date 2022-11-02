@@ -86,7 +86,7 @@ for (i = 0; i < acc.length; i++) {
 //     this.classList.toggle('rotate')
 //   }
 
-
+function rangeFunction(){
 let rng = document.getElementById('myRange'); //rng - это ползунок
 let out = document.getElementById('range_count'); // i1 - input
 let coins = document.getElementById('range_coins');
@@ -96,3 +96,6 @@ rng.oninput = function () {
     out.innerHTML = parseInt(this.value * 10);
     coins.innerHTML = parseInt(this.value * 14);
 }
+}
+
+rangeFunction();

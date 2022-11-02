@@ -1033,6 +1033,7 @@ input:checked + .switch-slider:before {
 .update {
   grid-area: update;
   display: flex;
+  justify-content: space-between;
   gap: 0px;
 }
 .update-wrap {
@@ -1146,6 +1147,10 @@ input:checked + .switch-slider:before {
   background: #f0b55d;
 }
 
+.central-central {
+  height: 90vh;
+}
+
 .forum {
   display: flex;
   flex-direction: column;
@@ -1154,6 +1159,10 @@ input:checked + .switch-slider:before {
   border-radius: 10px;
   border: 2px solid rgba(0, 0, 0, 0.1);
   padding: 3% 5%;
+}
+.forum-wrapper {
+  height: 80%;
+  margin-bottom: 2%;
 }
 .forum__header {
   font-weight: 700;
@@ -1188,6 +1197,7 @@ input:checked + .switch-slider:before {
   width: 100%;
   border-radius: 11px;
   padding: 1%;
+  border: 2px solid #D7D7D7;
 }
 .text-areas:focus {
   border: 2px solid #F09000;

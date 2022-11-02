@@ -61,6 +61,7 @@
 {
     grid-area: update;
     display: flex;
+    justify-content: space-between;
     &-wrap
     {
     display: flex;
