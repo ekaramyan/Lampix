@@ -1,4 +1,6 @@
 .accordion {
+    display: flex;
+    justify-content: space-between;
     background-color: #FEFEFE;
     font-weight: 700;
     font-size: 25px;
@@ -34,16 +36,8 @@
     &active{
         background-color: #FFD79A;
     }
-
-    &:after {
-        content: '\02795'; /* Unicode character for "plus" sign (+) */
-        font-size: 13px;
-        color: #777;
-        float: right;
-        margin-left: 5px;
-    }
     
-    &:after {
+    &__arrow {
         content: "";
         width: 12px;
         height: 12px;
@@ -53,6 +47,10 @@
         //position: absolute; 
         transition: .5s;
         &:focus{
+            transform:  rotate(-224deg);
+        }
+        &active
+        {
             transform:  rotate(-224deg);
         }
 

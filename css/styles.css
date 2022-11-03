@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 .header {
   display: flex;
@@ -1205,6 +1204,8 @@ input:checked + .switch-slider:before {
 }
 
 .accordion {
+  display: flex;
+  justify-content: space-between;
   background-color: #FEFEFE;
   font-weight: 700;
   font-size: 25px;
@@ -1237,14 +1238,7 @@ input:checked + .switch-slider:before {
 .accordionactive {
   background-color: #FFD79A;
 }
-.accordion:after {
-  content: "➕"; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: #777;
-  float: right;
-  margin-left: 5px;
-}
-.accordion:after {
+.accordion__arrow {
   content: "";
   width: 12px;
   height: 12px;
@@ -1253,7 +1247,10 @@ input:checked + .switch-slider:before {
   transform: rotate(224deg);
   transition: 0.5s;
 }
-.accordion:after:focus {
+.accordion__arrow:focus {
+  transform: rotate(-224deg);
+}
+.accordion__arrowactive {
   transform: rotate(-224deg);
 }
 
