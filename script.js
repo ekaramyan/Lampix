@@ -47,10 +47,15 @@ if (menuClose) {
 
 
 let acc = document.getElementsByClassName("accordion");
+let acc_arr = document.getElementsByClassName("accordion__arrow");
 let i;
 
 acc.onclick=function(){
     acc.classList.toggle('active')
+}
+
+acc_arr.onclick=function(){
+    acc_arr.classList.toggle('active')
 }
 
 for (i = 0; i < acc.length; i++) {
@@ -108,4 +113,3 @@ rng.oninput = function () {
 }
 }
 rangeFunction();
-
