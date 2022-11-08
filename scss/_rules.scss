@@ -33,7 +33,7 @@
     {
         background-color: #FFD79A;
     }
-    &active{
+    .active{
         background-color: #FFD79A;
     }
     
@@ -46,10 +46,11 @@
         transform:  rotate(224deg);
         //position: absolute; 
         transition: .5s;
+        z-index: 2;
         &:focus{
             transform:  rotate(-224deg);
         }
-        .active
+        &.active
         {
             transform:  rotate(-224deg);
         }

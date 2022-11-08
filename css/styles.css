@@ -1235,7 +1235,7 @@ input:checked + .switch-slider:before {
 .accordion:hover {
   background-color: #FFD79A;
 }
-.accordionactive {
+.accordion .active {
   background-color: #FFD79A;
 }
 .accordion__arrow {
@@ -1246,11 +1246,12 @@ input:checked + .switch-slider:before {
   border-width: 1px 0 0 1px;
   transform: rotate(224deg);
   transition: 0.5s;
+  z-index: 2;
 }
 .accordion__arrow:focus {
   transform: rotate(-224deg);
 }
-.accordion__arrow .active {
+.accordion__arrow.active {
   transform: rotate(-224deg);
 }
 

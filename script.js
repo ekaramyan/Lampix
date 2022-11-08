@@ -16,7 +16,6 @@ if (menu_btn) {
         burger_menu.classList.add('active');
         burger_menu_content.classList.add('active');
     });
-    console.log(menu_btn)
 }
 const menuClose = document.getElementById('burger-menu__btn_close');
 if (menuClose) {
@@ -34,8 +33,9 @@ let i;
 
 acc.onclick = function () {
     acc.classList.toggle('active')
-    acc_arr.classList.toggle('active')
+    acc_arr.classList.add('active')
 }
+
 
 
 for (i = 0; i < acc.length; i++) {
@@ -51,6 +51,7 @@ for (i = 0; i < acc.length; i++) {
             panel.style.display = "block";
         }
     });
+
 }
 for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function () {
