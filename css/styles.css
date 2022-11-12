@@ -1235,8 +1235,11 @@ input:checked + .switch-slider:before {
 .accordion:hover {
   background-color: #FFD79A;
 }
-.accordion .active {
-  background-color: #FFD79A;
+.accordion.active {
+  background: #FFD79A;
+}
+.accordion.active .accordion__arrow {
+  transform: rotate(45deg);
 }
 .accordion__arrow {
   content: "";
@@ -1244,15 +1247,9 @@ input:checked + .switch-slider:before {
   height: 12px;
   border: solid #323232;
   border-width: 1px 0 0 1px;
-  transform: rotate(224deg);
+  transform: rotate(-135deg);
   transition: 0.5s;
   z-index: 2;
-}
-.accordion__arrow:focus {
-  transform: rotate(-224deg);
-}
-.accordion__arrow.active {
-  transform: rotate(-224deg);
 }
 
 .rotate {

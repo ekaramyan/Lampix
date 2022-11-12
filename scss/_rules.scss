@@ -33,8 +33,13 @@
     {
         background-color: #FFD79A;
     }
-    .active{
-        background-color: #FFD79A;
+    &.active{
+        background: #FFD79A;
+        .accordion__arrow
+        {
+                transform:  rotate(45deg);
+        }
+
     }
     
     &__arrow {
@@ -43,17 +48,11 @@
         height: 12px;
         border:  solid #323232;
         border-width: 1px 0 0 1px;
-        transform:  rotate(224deg);
+        transform:  rotate(-135deg);
         //position: absolute; 
         transition: .5s;
         z-index: 2;
-        &:focus{
-            transform:  rotate(-224deg);
-        }
-        &.active
-        {
-            transform:  rotate(-224deg);
-        }
+
 
     }
 

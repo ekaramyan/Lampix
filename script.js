@@ -4,10 +4,6 @@ $(document).ready(function () {
     });
 });
 
-const search = function () {
-
-}
-
 const menu_btn = document.getElementById('burger-menu__btn');
 if (menu_btn) {
     const burger_menu = document.getElementById('burger-menu');
@@ -27,22 +23,20 @@ if (menuClose) {
     });
 }
 
+
+
 let acc = document.getElementsByClassName("accordion");
-let acc_arr = document.getElementsByClassName("accordion__arrow");
 let i;
 
 acc.onclick = function () {
     acc.classList.toggle('active')
-    acc_arr.classList.add('active')
 }
 
 
 
+
 for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-        /* Toggle between adding and removing the "active" class,
-        to highlight the button that controls the panel */
-        this.classList.toggle("active");
+    acc[i].addEventListener("click", function () {    
         /* Toggle between hiding and showing the active panel */
         const panel = this.nextElementSibling;
         if (panel.style.display === "block") {
@@ -53,17 +47,23 @@ for (i = 0; i < acc.length; i++) {
     });
 
 }
+
+
 for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function () {
         this.classList.toggle("active");
         const panel = this.nextElementSibling;
+        //const acc = document.getElementsByClassName("accordion");
         if (panel.style.maxHeight) {
             panel.style.maxHeight = null;
+            //acc.style.backgroundColor= "orange";
         } else {
             panel.style.maxHeight = panel.scrollHeight + "px";
         }
     });
 }
+
+
 
 function rangeFunction() {
     let rng = document.getElementById('myRange'); //rng - это ползунок
