@@ -1,0 +1,18 @@
+.modal {
+    display: none;
+    background: rgba(72, 72, 72, 0.53);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 30;
+    &__wrapper {
+    }
+    &.active
+    {
+        display: flex;
+    }
+}
+.p-text {
+}
+.promo {
+}

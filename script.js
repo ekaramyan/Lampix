@@ -85,3 +85,14 @@ function rangeFunction() {
     }
 }
 rangeFunction();
+
+
+const modalShow = function(){
+    let modal1 = document.querySelector('modal-1')
+    let modal2 = document.querySelector('modal-2')
+    if (modal1.classList('active')){
+        modal2.classList.remove('active')
+    }
+}
+
+modalShow();
