@@ -65,34 +65,35 @@ for (i = 0; i < acc.length; i++) {
 
 
 
-function modalShow() {
 
+let modal1 = document.querySelectorAll('.modal-1');
+let modal2 = document.getElementById('modal2');
+const shopBtn = document.getElementsByClassName('card');
+const closeBtn = document.querySelectorAll('.close');
 
-    // if (modal1.classList('active')){
-    //     modal2.classList.remove('active');
+// if (modal1.classList('active')){
+//     modal2.classList.remove('active');
+// }
+
+if (shopBtn.length !== null) {
+
+    // shopBtn.onclick = function () {
+    //     modal1.classList.add('active');
     // }
-    let modal1 = document.getElementById('modal1');
-    let modal2 = document.getElementById('modal2');
-    const shopBtn = document.querySelectorAll('.card');
-    const closeBtn = document.querySelectorAll('.close');
-
-    if (shopBtn.length !== null) {
-
-        // shopBtn.onclick = function () {
-        //     modal1.classList.add('active');
-        // }
-        shopBtn.onclick = function () {
+    let i;
+    for (i = 0; i < shopBtn.length; i++) {
+        shopBtn[i].addEventListener('click', function () {
             modal2.classList.add('active');
-        }
-
-        closeBtn.onclick = function () {
-            modal2.classList.remove('active');
-            modal1.classList.remove('active');
-        }
-        console.log(shopBtn);
+            console.log(modal2);
+        });
     }
+
+    closeBtn.onclick = function () {
+        modal2.classList.remove('active');
+        modal1.classList.remove('active');
+    }
+    //console.log(modal2);
 }
-modalShow();
 
 
 
