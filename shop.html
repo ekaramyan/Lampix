@@ -14,18 +14,20 @@
 
 <body>
 
-  <div class="modal modal-1">
+  <div class="modal modal-1" id="modal1">
+    <a class="close" href="shop.html">❌</a>
     <div class="modal__wrapper">
-      <p class="p-text">
-        <input type="text" class="promo">
-        <input type="text" class="promo">
+      <p class="p-text">Войдите в аккаунт</p>
+      <input type="text" class="promo" placeholder="login">
+      <input type="text" class="promo" placeholder="password">
     </div>
   </div>
-  <div class="modal modal-2">
+  <div class="modal modal-2" id="modal2">
+    <a class="close" href="shop.html">❌</a>
     <div class="modal__wrapper">
-      <p class="p-text">
-        <input type="text" class="promo">
-        <input type="text" class="promo">
+      <p class="p-text">Phantom</p>
+      <input type="text" class="promo" placeholder="">
+      <input type="text" class="promo" placeholder="">
     </div>
   </div>
 
@@ -36,7 +38,8 @@
         <div class="burger-menu__content">
 
           <div class="online menu-online">
-            <div class="burger-menu__button menu-close"  id="burger-menu__btn_close"> <i><i class="fa-solid fa-xmark"></i></i></div>
+            <div class="burger-menu__button menu-close" id="burger-menu__btn_close"> <i><i
+                  class="fa-solid fa-xmark"></i></i></div>
             <div class="online-switch">
               <p class="online-text menu-online-text">Online</p>
               <label class="switch">
@@ -50,21 +53,31 @@
           <ul class="menu" id="menu">
 
 
-            <a href="main.html"><li class="menu__item"><i class="fa-sharp fa-solid fa-house"></i>
-              <p class="menu__item-text">главная</p>
-            </li></a>
-            <a href="forum.html"><li class="menu__item"><i class="fa-solid fa-window-maximize"></i>
-              <p class="menu__item-text">форум</p>
-            </li></a>
-            <a href="shop.html"><li class="menu__item"><i class="fa-sharp fa-solid fa-credit-card"></i>
-              <p class="menu__item-text">магазин</p>
-            </li></a>
-            <a href="rules.html"><li class="menu__item"><i class="fa-solid fa-message"></i>
-              <p class="menu__item-text">правила</p>
-            </li></a>
-            <a href="FAQ.html"><li class="menu__item"><i class="fa-regular fa-circle-question"></i>
-              <p class="menu__item-text">FAQ</p>
-            </li></a>
+            <a href="main.html">
+              <li class="menu__item"><i class="fa-sharp fa-solid fa-house"></i>
+                <p class="menu__item-text">главная</p>
+              </li>
+            </a>
+            <a href="forum.html">
+              <li class="menu__item"><i class="fa-solid fa-window-maximize"></i>
+                <p class="menu__item-text">форум</p>
+              </li>
+            </a>
+            <a href="shop.html">
+              <li class="menu__item"><i class="fa-sharp fa-solid fa-credit-card"></i>
+                <p class="menu__item-text">магазин</p>
+              </li>
+            </a>
+            <a href="rules.html">
+              <li class="menu__item"><i class="fa-solid fa-message"></i>
+                <p class="menu__item-text">правила</p>
+              </li>
+            </a>
+            <a href="FAQ.html">
+              <li class="menu__item"><i class="fa-regular fa-circle-question"></i>
+                <p class="menu__item-text">FAQ</p>
+              </li>
+            </a>
           </ul>
         </div>
       </div>
@@ -75,7 +88,7 @@
 
         <ul class="account">
           <a href="index.html">
-            <li class="account__img"><img class="" src="src/img/personal-cabinet/avatar.jpg"
+            <li class="account__img"><img class="" src="../src/img/personal-cabinet/avatar.jpg"
                 alt="http://dummyimage.com/56/a6a6ff"></li>
           </a>
           <li class="account__name">
@@ -88,21 +101,31 @@
 
         <ul class="menu">
 
-          <a href="main.html"><li class="menu__item"><i class="fa-sharp fa-solid fa-house"></i>
-            <p class="menu__item-text">главная</p>
-          </li></a>
-          <a href="forum.html"><li class="menu__item"><i class="fa-solid fa-window-maximize"></i>
-            <p class="menu__item-text">форум</p>
-          </li></a>
-          <a href="shop.html"><li class="menu__item"><i class="fa-sharp fa-solid fa-credit-card"></i>
-            <p class="menu__item-text">магазин</p>
-          </li></a>
-          <a href="rules.html"><li class="menu__item"><i class="fa-solid fa-message"></i>
-            <p class="menu__item-text">правила</p>
-          </li></a>
-          <a href="FAQ.html"><li class="menu__item"><i class="fa-regular fa-circle-question"></i>
-            <p class="menu__item-text">FAQ</p>
-          </li></a>
+          <a href="main.html">
+            <li class="menu__item"><i class="fa-sharp fa-solid fa-house"></i>
+              <p class="menu__item-text">главная</p>
+            </li>
+          </a>
+          <a href="forum.html">
+            <li class="menu__item"><i class="fa-solid fa-window-maximize"></i>
+              <p class="menu__item-text">форум</p>
+            </li>
+          </a>
+          <a href="shop.html">
+            <li class="menu__item"><i class="fa-sharp fa-solid fa-credit-card"></i>
+              <p class="menu__item-text">магазин</p>
+            </li>
+          </a>
+          <a href="rules.html">
+            <li class="menu__item"><i class="fa-solid fa-message"></i>
+              <p class="menu__item-text">правила</p>
+            </li>
+          </a>
+          <a href="FAQ.html">
+            <li class="menu__item"><i class="fa-regular fa-circle-question"></i>
+              <p class="menu__item-text">FAQ</p>
+            </li>
+          </a>
         </ul>
       </section>
     </section>
@@ -112,7 +135,7 @@
       <header class="header">
 
         <div class="burger-menu__button" id="burger-menu__btn">
-          <img src="./src/img/personal-cabinet/burger.svg" alt="">
+          <img src="../src/img/personal-cabinet/burger.svg" alt="">
         </div>
         <p class="logo-text logo-phones">lampix.net</p>
         <div class="search-wrap">
@@ -134,7 +157,7 @@
 
         <ul class="header__account">
           <a href="index.html">
-            <li class="account__img"><img class="" src="src/img/personal-cabinet/avatar.jpg"
+            <li class="account__img"><img class="" src="../src/img/personal-cabinet/avatar.jpg"
                 alt="http://dummyimage.com/56/a6a6ff"></li>
           </a>
           <li class="account__name">
@@ -176,7 +199,7 @@
 
         <div class="shop">
           <ul class="shop-cards">
-            <li class="card">
+            <li class="card" id="card">
               <div class="image"><img src="src/img/shop/phantom1.png" alt=""></div>
               <div class="card-text">
                 <p class="card-text-name">Название</p>
@@ -265,7 +288,7 @@
   </section>
   </div>
 
-  
+
 
   <footer class="footer">
     <div class="upper">

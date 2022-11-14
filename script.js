@@ -29,14 +29,14 @@ let acc = document.getElementsByClassName("accordion");
 let i;
 
 acc.onclick = function () {
-    acc.classList.toggle('active')
+    acc.classList.toggle('active');
 }
 
 
 
 
 for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {    
+    acc[i].addEventListener("click", function () {
         /* Toggle between hiding and showing the active panel */
         const panel = this.nextElementSibling;
         if (panel.style.display === "block") {
@@ -65,6 +65,39 @@ for (i = 0; i < acc.length; i++) {
 
 
 
+function modalShow() {
+
+
+    // if (modal1.classList('active')){
+    //     modal2.classList.remove('active');
+    // }
+    let modal1 = document.getElementById('modal1');
+    let modal2 = document.getElementById('modal2');
+    const shopBtn = document.querySelectorAll('.card');
+    const closeBtn = document.querySelectorAll('.close');
+
+    if (shopBtn.length>0){
+
+    }
+
+
+
+    shopBtn.onclick = function () {
+        modal2.classList.add('active'); 
+    }
+
+    closeBtn.onclick = function(){
+        modal2.classList.remove('active')
+        modal1.classList.remove('active')
+    }
+    console.log(shopBtn);
+
+}
+modalShow();
+
+
+
+
 function rangeFunction() {
     let rng = document.getElementById('myRange'); //rng - это ползунок
     let out = document.getElementById('range_count'); // i1 - input
@@ -87,12 +120,3 @@ function rangeFunction() {
 rangeFunction();
 
 
-const modalShow = function(){
-    let modal1 = document.querySelector('modal-1')
-    let modal2 = document.querySelector('modal-2')
-    if (modal1.classList('active')){
-        modal2.classList.remove('active')
-    }
-}
-
-modalShow();
