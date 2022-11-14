@@ -175,6 +175,10 @@
 {
     color: #F09000;
     background: #f0900033;
+    .menu__item-text
+{
+    color: #fff;
+}
 }
 &__item-text
 { 
@@ -188,10 +192,7 @@
     color: #ffffff80;
     transition: .5s;
 }
-&__item-text:hover
-{
-    color: #fff;
-}
+
 
 /* &__item::after
 {

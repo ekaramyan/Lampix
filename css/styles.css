@@ -323,6 +323,9 @@ input:checked + .switch-slider:before {
   color: #F09000;
   background: rgba(240, 144, 0, 0.2);
 }
+.menu__item:hover .menu__item-text {
+  color: #fff;
+}
 .menu__item-text {
   cursor: pointer;
   font-family: "Montserrat";
@@ -333,9 +336,6 @@ input:checked + .switch-slider:before {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.5019607843);
   transition: 0.5s;
-}
-.menu__item-text:hover {
-  color: #fff;
 }
 
 .footer {
@@ -880,6 +880,9 @@ input:checked + .switch-slider:before {
   width: 100%;
   height: 100%;
   padding: 3% 1%;
+}
+.shop .card {
+  cursor: pointer;
 }
 .shop-menu {
   display: flex;

@@ -76,22 +76,21 @@ function modalShow() {
     const shopBtn = document.querySelectorAll('.card');
     const closeBtn = document.querySelectorAll('.close');
 
-    // if (shopBtn.length > 0) {
-    //     shopBtn.onclick = function()
-    //     {
-    //         modal1.classList.add('active');
-    //     }
-    // }
-    shopBtn.onclick = function () {
-        modal2.classList.add('active');
-    }
+    if (shopBtn.length !== null) {
 
-    closeBtn.onclick = function () {
-        modal2.classList.remove('active')
-        modal1.classList.remove('active')
-    }
-    console.log(shopBtn);
+        // shopBtn.onclick = function () {
+        //     modal1.classList.add('active');
+        // }
+        shopBtn.onclick = function () {
+            modal2.classList.add('active');
+        }
 
+        closeBtn.onclick = function () {
+            modal2.classList.remove('active');
+            modal1.classList.remove('active');
+        }
+        console.log(shopBtn);
+    }
 }
 modalShow();
 
@@ -102,22 +101,22 @@ function rangeFunction() {
     let rng = document.getElementById('myRange'); //rng - это ползунок
     let out = document.getElementById('range_count'); // i1 - input
     let coins = document.getElementById('range_coins');
-    if(rng !== null){
-    const min = rng.min
-    const max = rng.max
-    const value = rng.value
-    rng.style.background = `linear-gradient(to right, #FFD699 0%, #FFD699 ${(value - min) / (max - min) * 100}%, #DEE2E6 ${(value - min) / (max - min) * 100}%, #DEE2E6 100%)`
+    if (rng !== null) {
+        const min = rng.min
+        const max = rng.max
+        const value = rng.value
+        rng.style.background = `linear-gradient(to right, #FFD699 0%, #FFD699 ${(value - min) / (max - min) * 100}%, #DEE2E6 ${(value - min) / (max - min) * 100}%, #DEE2E6 100%)`
 
-    out.innerHTML = rng.value;
-    coins.innerHTML = rng.value;
+        out.innerHTML = rng.value;
+        coins.innerHTML = rng.value;
 
-    rng.oninput = function () {
-        out.innerHTML = parseInt(this.value * 10);
-        coins.innerHTML = parseInt(this.value * 14);
-        this.style.background = `linear-gradient(to right, #FFD699 0%, #FFD699 ${(this.value - this.min) / (this.max - this.min) * 100}%, #DEE2E6 ${(this.value - this.min) / (this.max - this.min) * 100}%, #DEE2E6 100%)`
+        rng.oninput = function () {
+            out.innerHTML = parseInt(this.value * 10);
+            coins.innerHTML = parseInt(this.value * 14);
+            this.style.background = `linear-gradient(to right, #FFD699 0%, #FFD699 ${(this.value - this.min) / (this.max - this.min) * 100}%, #DEE2E6 ${(this.value - this.min) / (this.max - this.min) * 100}%, #DEE2E6 100%)`
 
+        }
     }
-}
 }
 rangeFunction();
 
