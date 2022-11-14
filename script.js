@@ -76,17 +76,17 @@ function modalShow() {
     const shopBtn = document.querySelectorAll('.card');
     const closeBtn = document.querySelectorAll('.close');
 
-    if (shopBtn.length>0){
-
-    }
-
-
-
+    // if (shopBtn.length > 0) {
+    //     shopBtn.onclick = function()
+    //     {
+    //         modal1.classList.add('active');
+    //     }
+    // }
     shopBtn.onclick = function () {
-        modal2.classList.add('active'); 
+        modal2.classList.add('active');
     }
 
-    closeBtn.onclick = function(){
+    closeBtn.onclick = function () {
         modal2.classList.remove('active')
         modal1.classList.remove('active')
     }
@@ -102,6 +102,7 @@ function rangeFunction() {
     let rng = document.getElementById('myRange'); //rng - это ползунок
     let out = document.getElementById('range_count'); // i1 - input
     let coins = document.getElementById('range_coins');
+    if(rng !== null){
     const min = rng.min
     const max = rng.max
     const value = rng.value
@@ -117,6 +118,9 @@ function rangeFunction() {
 
     }
 }
+}
 rangeFunction();
+
+
 
 
