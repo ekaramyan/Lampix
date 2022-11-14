@@ -8,13 +8,69 @@
     width: 100vw;
     height: 100vh;
     z-index: 30;
+    .subtext{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #0707075e;
+    }
     &__wrapper {
+        display: flex;
+        flex-direction: column;
         background: #fff;
         border-radius: 10px;
         max-height: 400px;
         max-width: 670px;
         height: 100%;
         width: 100%;
+        padding: 1.5% 2%;
+        gap: 5%;
+        &:first-child
+        {
+            gap: 0;
+        }
+
+        .price-count
+        {
+            font-size: 25px;
+            color: #f0900080;
+        }
+
+        .close
+        {
+            align-self: flex-end;
+        }
+        .top{
+            display: flex;
+
+            &__text-wrap
+            {
+                display: flex;
+                flex-direction: column;
+                row-gap: 11px;
+            }
+        }
+        .bottom
+        {
+            display: flex;
+            gap: 5%;
+            margin-top: 5%;
+            
+            justify-self: center;
+            .text{
+                width: 50%;
+                display: flex;
+                overflow-y: auto;
+                flex-direction: column;
+            }
+
+            .inputs{
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                gap: 3%;
+            }
+        }
     }
     &.active
     {
@@ -39,8 +95,6 @@
         }
 
     }
+
 }
-.close
-{
-    
-}
+

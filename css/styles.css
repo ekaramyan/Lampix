@@ -1291,13 +1291,59 @@ input:checked + .switch-slider:before {
   height: 100vh;
   z-index: 30;
 }
+.modal .subtext {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(7, 7, 7, 0.368627451);
+}
 .modal__wrapper {
+  display: flex;
+  flex-direction: column;
   background: #fff;
   border-radius: 10px;
   max-height: 400px;
   max-width: 670px;
   height: 100%;
   width: 100%;
+  padding: 1.5% 2%;
+  gap: 5%;
+}
+.modal__wrapper:first-child {
+  gap: 0;
+}
+.modal__wrapper .price-count {
+  font-size: 25px;
+  color: rgba(240, 144, 0, 0.5019607843);
+}
+.modal__wrapper .close {
+  align-self: flex-end;
+}
+.modal__wrapper .top {
+  display: flex;
+}
+.modal__wrapper .top__text-wrap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 11px;
+}
+.modal__wrapper .bottom {
+  display: flex;
+  gap: 5%;
+  margin-top: 5%;
+  justify-self: center;
+}
+.modal__wrapper .bottom .text {
+  width: 50%;
+  display: flex;
+  overflow-y: auto;
+  flex-direction: column;
+}
+.modal__wrapper .bottom .inputs {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 3%;
 }
 .modal.active {
   display: flex;
