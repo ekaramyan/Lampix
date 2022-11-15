@@ -71,28 +71,17 @@ let modal2 = document.getElementById('modal2');
 const shopBtn = document.getElementsByClassName('card');
 const closeBtn = document.querySelectorAll('.close');
 
-// if (modal1.classList('active')){
-//     modal2.classList.remove('active');
-// }
-
 if (shopBtn.length !== null) {
-
-    // shopBtn.onclick = function () {
-    //     modal1.classList.add('active');
-    // }
     let i;
     for (i = 0; i < shopBtn.length; i++) {
         shopBtn[i].addEventListener('click', function () {
             modal2.classList.add('active');
-            console.log(modal2);
         });
     }
-
     closeBtn.onclick = function () {
         modal2.classList.remove('active');
         modal1.classList.remove('active');
     }
-    //console.log(modal2);
 }
 
 
